@@ -1,0 +1,30 @@
+.my-border{
+    border: solid 1px #D4D4D4;
+    border-radius: 15px;
+}
+.blue-text{
+    color: var(--dashboard-bg);
+}
+.gray-text{
+    color: #9C9C9C;
+}
+.graybtn{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 10px);
+    color: #000;
+    background-color: #E1E7E9;
+    padding: 20px;
+    border-radius: 15px;
+}
+.redbtn{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 10px);
+    color: #000;
+    background-color: #FF0000;
+    padding: 20px;
+    border-radius: 15px;
+}
