@@ -1,1 +1,20 @@
 /* Saim */
+
+.icon-20px{
+    width:20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.db-calender-bg{
+    background-color: rgba(153, 195, 255, 1);
+}
+.db-calender-input{
+    max-width: fit-content;
+}
+.db-slides-icon{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin:0 8px;
+}
