@@ -179,7 +179,7 @@ body {
     border-radius: 50%;
 }
 .tem-right-btm{
-    height: calc(100dvh - 120px);
+    height: calc(100dvh - 125px);
 }
 
 .template-body>* ::-webkit-scrollbar {
@@ -212,4 +212,8 @@ body {
         border-top-left-radius: 0 !important;
         border-top-right-radius: 0 !important;
     }
+    .tem-right-btm{
+        height: calc(100dvh - 100px);
+    }
+    
 }
