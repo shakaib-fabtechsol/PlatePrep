@@ -166,6 +166,25 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="mt-3">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h3>Ingredients</h3>
+                                                <button id="add-ingredient" class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Ingredient</button>
+                                            </div>
+                                            <div id="ingredients-list">
+                                                <div class="ingredient-row mt-3">
+                                                    <input type="text" placeholder="Type here" class="form-control me-2">
+                                                    <button class="spellbtn me-2">Spell Checker</button>
+                                                    <input type="number" value="1" class="form-control me-2">
+                                                    <select class="form-select me-2">
+                                                        <option>Grams</option>
+                                                        <option>Kg</option>
+                                                        <option>Liters</option>
+                                                    </select>
+                                                    <button class="remove px-3"></button>
+                                                </div>
+                                            </div>
+                                        </div>
                                         
                                     </div>
                                 </form>
@@ -227,6 +246,72 @@
                 }
             });
         });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Adding Ingredients
+            document.getElementById('add-ingredient').addEventListener('click', function(e) {
+                e.preventDefault();
+                let ingredientRow = document.createElement('div');
+                ingredientRow.classList.add('ingredient-row');
+                ingredientRow.innerHTML = `
+                    <input type="text" placeholder="Type here" class="form-control me-2">
+                    <button class="spellbtn me-2">Spell Checker</button>
+                    <input type="number" value="1" class="form-control me-2">
+                    <select class="form-select me-2">
+                        <option>Grams</option>
+                        <option>Kg</option>
+                        <option>Liters</option>
+                    </select>
+                    <button class="remove"><i class="fa-solid fa-x"></i></button>
+                `;
+                document.getElementById('ingredients-list').appendChild(ingredientRow);
+                attachRemoveHandler(ingredientRow.querySelector('.remove'));
+            });
+        
+            // Adding Essentials
+            document.getElementById('add-essential').addEventListener('click', function(e) {
+                e.preventDefault();
+                let essentialRow = document.createElement('div');
+                essentialRow.classList.add('essential-row');
+                essentialRow.innerHTML = `
+                    <input type="text" placeholder="Type here">
+                    <button class="spell-checker">Spell Checker</button>
+                    <button class="remove">-</button>
+                `;
+                document.getElementById('essential-list').appendChild(essentialRow);
+                attachRemoveHandler(essentialRow.querySelector('.remove'));
+            });
+        
+            // Adding Steps
+            document.getElementById('add-step').addEventListener('click', function(e) {
+                e.preventDefault();
+                let stepRow = document.createElement('div');
+                stepRow.classList.add('step-row');
+                stepRow.innerHTML = `
+                    <input type="text" placeholder="Type step here">
+                    <button class="spell-checker">Spell Checker</button>
+                    <button class="remove">-</button>
+                `;
+                document.getElementById('steps-list').appendChild(stepRow);
+                attachRemoveHandler(stepRow.querySelector('.remove'));
+            });
+        
+            // Remove row handler
+            function attachRemoveHandler(button) {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    button.parentElement.remove();
+                });
+            }
+        
+            // Attach remove handlers for initial rows
+            document.querySelectorAll('.remove').forEach(function(button) {
+                attachRemoveHandler(button);
+            });
+        });
+        
     </script>
     
 </body>
