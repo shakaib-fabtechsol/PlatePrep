@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,15 @@
     <link rel="stylesheet" href="../css/main1.css">
     <title>Add User</title>
 </head>
+
 <body class="template-body">
     <section>
         <div class="template-main d-flex">
             <div class="template-left d-xl-block" id="template-left">
                 <div class="d-flex flex-column justify-content-between h-100 px-1 py-4">
                     <div class="template-left-top d-flex justify-content-center">
-                        <a class="text-decoration-none" href="#"><img class="template-logo" src="../imgs/db-logo.png" alt="Logo"></a>
+                        <a class="text-decoration-none" href="#"><img class="template-logo" src="../imgs/db-logo.png"
+                                alt="Logo"></a>
                     </div>
 
                     <div class="template-left-mid px-2 overflow-y-auto">
@@ -98,7 +101,8 @@
                         <form action="">
                             <div class="d-flex align-items-center bg-white rounded px-2">
                                 <label for="search"><i class="fa-solid fa-magnifying-glass text-blue me-2"></i></label>
-                                <input id="search" class="w-100  border-0 bg-transparent focus-none  py-2" type="search" name="search" placeholder="Search">
+                                <input id="search" class="w-100  border-0 bg-transparent focus-none  py-2" type="search"
+                                    name="search" placeholder="Search">
                             </div>
                         </form>
                     </div>
@@ -138,7 +142,8 @@
                                         <img src="../imgs/img-preview.png" alt="img" id="preview-img">
                                     </div>
                                     <label for="add-mem-img">
-                                        <div class="position-absolute top-50 start-100 translate-middle bg-white border rounded-circle pointer p-2">
+                                        <div
+                                            class="position-absolute top-50 start-100 translate-middle bg-white border rounded-circle pointer p-2">
                                             <img class="icon-20px" src="../imgs/camera-gray.png" alt="">
                                         </div>
                                     </label>
@@ -146,17 +151,106 @@
                                 </div>
                                 <h5>Personal Information</h5>
                                 <div class="row">
-                                    <div class="col-sm-6 col-md-4">
+                                    <div class="col-sm-6 col-md-4 p-2">
                                         <div>
                                             <label class="form-label mb-0" for="user-id">User ID</label>
-                                            <input class="form-control focus-none" type="text"  id="user-id" placeholder="Type here">
+                                            <input class="form-control focus-none" type="text" id="user-id"
+                                                placeholder="Type here">
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
+                                    <div class="col-sm-6 col-md-4 p-2">
                                         <div>
                                             <label class="form-label mb-0" for="firstname">First Name</label>
-                                            <input class="form-control focus-none" type="text"  id="firstname" placeholder="Type here">
+                                            <input class="form-control focus-none" type="text" id="firstname"
+                                                placeholder="Type here">
                                         </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="lastname">Last Name</label>
+                                            <input class="form-control focus-none" type="text" id="lastname"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="email">Email Address</label>
+                                            <input class="form-control focus-none" type="email" id="email"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="phone-number">Phone Number</label>
+                                            <input class="form-control focus-none" type="tel" id="phone-number"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="DOB">Date of Birth</label>
+                                            <input class="form-control focus-none" type="date" id="DOB"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="mt-4">Address Detail</h5>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="street-address">Street Address</label>
+                                            <input class="form-control focus-none" type="text" id="street-address"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="city">City</label>
+                                            <input class="form-control focus-none" type="text" id="city"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="state">State/Province</label>
+                                            <input class="form-control focus-none" type="text" id="state"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="zip-code">Zip/Postal Code</label>
+                                            <input class="form-control focus-none" type="text" id="email"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 p-2">
+                                        <div>
+                                            <label class="form-label mb-0" for="country">Country</label>
+                                            <input class="form-control focus-none" type="text" id="country"
+                                                placeholder="Type here">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="mt-4">Select Member Role</h5>
+                                <div class="d-flex">
+                                    <div class="radio-wrapper-8 me-5">
+                                        <label class="radio-wrapper-8" for="owner">
+                                            <input id="owner" type="radio" name="radio-examples">
+                                            <span>Restaurant Owner</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio-wrapper-8 me-5">
+                                        <label class="radio-wrapper-8" for="head-chef">
+                                            <input id="head-chef" type="radio" name="radio-examples">
+                                            <span>Head Chef</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio-wrapper-8 me-5">
+                                        <label class="radio-wrapper-8" for="kitchen">
+                                            <input id="kitchen" type="radio" name="radio-examples">
+                                            <span>Kitchen</span>
+                                        </label>
                                     </div>
                                 </div>
                             </form>
@@ -189,13 +283,92 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/main.js"></script>
     <script>
-        let uploadedimg = document.getElementById('add-mem-img'); 
+        let uploadedimg = document.getElementById('add-mem-img');
         let previewdimg = document.getElementById('preview-img');
-        uploadedimg.addEventListener('input' , function(event){
+        uploadedimg.addEventListener('input', function (event) {
             let uploadedimgs = event.target.files[0];
-            previewdimg.src= URL.createObjectURL(uploadedimgs)
+            previewdimg.src = URL.createObjectURL(uploadedimgs)
         })
-        
+
     </script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+<style>
+    label.radio-wrapper-8 {
+        display: block;
+        cursor: pointer;
+    }
+
+    label.radio-wrapper-8 input {
+        display: none;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+
+    label.radio-wrapper-8 input+span {
+        line-height: 22px;
+        height: 22px;
+        padding-left: 22px;
+        display: block;
+        position: relative;
+    }
+
+    label.radio-wrapper-8 input+span:not(:empty) {
+        padding-left: 30px;
+    }
+
+    label.radio-wrapper-8 input+span:before,
+    label.radio-wrapper-8 input+span:after {
+        content: "";
+        width: 22px;
+        height: 22px;
+        display: block;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    label.radio-wrapper-8 input+span:before {
+        background: #D1D7E3;
+        transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+    }
+
+    label.radio-wrapper-8 input+span:after {
+        background: #fff;
+        transform: scale(0.78);
+        transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+    }
+
+    label.radio-wrapper-8 input:checked+span:before {
+        transform: scale(1.04);
+        background: #5D9BFB;
+    }
+
+    label.radio-wrapper-8 input:checked+span:after {
+        transform: scale(0.4);
+        transition: transform 0.3s ease;
+    }
+
+    label.radio-wrapper-8:hover input+span:before {
+        transform: scale(0.92);
+    }
+
+    label.radio-wrapper-8:hover input+span:after {
+        transform: scale(0.74);
+    }
+
+    label.radio-wrapper-8:hover input:checked+span:after {
+        transform: scale(0.4);
+    }
+</style>
