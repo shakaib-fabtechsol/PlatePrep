@@ -18,3 +18,55 @@
     object-fit: contain;
     margin:0 8px;
 }
+
+.db-overview-table td{
+    padding: 4px;
+}
+
+.db-pie-chart{
+    width: 200px;
+    height: 200px;
+}
+
+.db-table{
+    max-height: 350px;
+}
+.db-table table{
+    border-collapse: separate;
+    border-spacing:0 5px;
+}
+.db-table th{
+    background-color: var(--dashboard-bg);
+    text-wrap: nowrap;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px
+}
+.db-table td{
+    padding:16px;
+    text-wrap: nowrap;
+    align-content: center;
+    background-color: var(--bg-custom-gray);
+    border-top: 1px solid rgba(231, 231, 231, 1);
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+}
+.db-table tbody tr td:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid rgba(231, 231, 231, 1);
+}
+
+.db-table tbody tr td:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid rgba(231, 231, 231, 1);
+}
+.db-table thead tr th:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.db-table thead tr th:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

@@ -123,6 +123,9 @@ body {
 .text-blue {
     color: var(--bd-active-link);
 }
+.text-dark-blue{
+    color: var(--dashboard-bg);
+}
 
 .border-blue {
     border-color: var(--bd-active-link) !important;
