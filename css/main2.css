@@ -66,3 +66,7 @@
     padding: 17px 5px;
     border-radius: 10px;
 }
+.skyselect option{
+    background: #fff;
+    color: #9C9C9C;
+}
