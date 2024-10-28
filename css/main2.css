@@ -254,7 +254,7 @@
 }
 
 
-.ingredient-row, .essential-row, .step-row {
+.ingredient-row, .essential-row, .step-row,.Starch-preparation-row {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
