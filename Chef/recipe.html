@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/main1.css">
     <link rel="stylesheet" href="../css/main2.css">
-    <title>Generate Menu</title>
+    <title>Recipe</title>
 </head>
 
 <body class="template-body">
@@ -110,96 +112,65 @@
                 <div class="tem-right-btm p-2 pt-4">
                     <div class="overflow-y-auto h-100 p-2">
                         <div class="container-fluid">
-                            <h2>Menu</h2>
-                            <div class="row align-items-center justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
-                                <div class="col-lg-6 col-xl-6">
-                                    <div class="searchbar">
-                                        <input type="text" class="searchinput focus-none" placeholder="Search Dish Name">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
+                            <div class="row align-items-center justify-content-between ">
+                                <div class="col-md-6 col-lg-4">
+                                    <h2>Recipe</h2>
                                 </div>
-                                <div class="col-lg-6 col-xl-6">
-                                    <div class="d-flex align-items-center justify-content-end">
-                                        <select name="" id="" class="skyselect focus-none">
-                                            <option value="Cuisine Type" selected disabled hidden>Cuisine Type</option>
-                                            <option value="Italian">Italian</option>
-                                            <option value="Mexican">Mexican</option>
-                                            <option value="Vegan">Vegan</option>
-                                            <option value="Seasonal">Seasonal</option>
-                                            <option value="Fine Dining">Fine Dining</option>
-                                            <option value="Casual">Casual</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                        <a href="" class="bluebtn">Add New Recipie</a>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="graybtn">Edit</a>
+                                        <a href="#" class="redbtn">Delete</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row bg-white rounded-4 mt-3 px-1 py-2">
-                                <div class="col-sm-6 col-lg-4 col-xl-3 my-2">
-                                    <div class="d-flex flex-column p-3 h-100 my-border">
-                                        <div>
-                                            <img src="../imgs/stake.png" alt="" class="w-100">
-                                            <p class="my-2 small blue-text">Balsamic Glazed Pork Porterhouse, with
-                                                broccolini and roasted
-                                                fingerlings.</p>
-                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
-                                                broccolini and roasted
-                                                fingerlings.</p>
-                                        </div>
-                                        <div class="mt-auto d-flex justify-content-between">
-                                            <a href="#" class="graybtn">Edit</a>
-                                            <a href="#" class="redbtn">Delete</a>
-                                        </div>
+                            <div
+                                class="row align-items-top justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
+                                <div class="col-md-6">
+                                    <div class="slider">
+                                        <img src="/imgs/slider.png">
+                                        <img src="/imgs/slider.png">
+                                        <img src="/imgs/slider.png">
+                                        <img src="/imgs/slider.png">
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3 my-2">
-                                    <div class="d-flex flex-column p-3 h-100 my-border">
-                                        <div>
-                                            <img src="../imgs/stake.png" alt="" class="w-100">
-                                            <p class="my-2 small blue-text">Balsamic Glazed Pork Porterhouse, with
-                                                broccolini and roasted
-                                                fingerlings.</p>
-                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
-                                                broccolini and roasted
-                                                fingerlings.</p>
-                                        </div>
-                                        <div class="mt-auto d-flex justify-content-between">
-                                            <a href="#" class="graybtn">Edit</a>
-                                            <a href="#" class="redbtn">Delete</a>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="searchbar">
+                                        <i class="fa-solid fa-paperclip mx-2 fs-5 text-muted"></i>
+                                        <input type="text" class="searchinput focus-none"
+                                            placeholder="Search Dish Name">
+                                        <button
+                                            class="d-flex align-items-center p-2 border-0 rounded-3 bg-main-blue text-white">
+                                            <i class="fa-regular mx-1 fa-copy"></i>Copy</button>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3 my-2">
-                                    <div class="d-flex flex-column p-3 h-100 my-border">
+                                    <div class="d-flex justify-content-between mt-3 border-bottom pb-4">
                                         <div>
-                                            <img src="../imgs/stake.png" alt="" class="w-100">
-                                            <p class="my-2 small blue-text">Balsamic Glazed Pork Porterhouse, with
-                                                broccolini and roasted
-                                                fingerlings.</p>
-                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
-                                                broccolini and roasted
-                                                fingerlings.</p>
+                                            <p class="fs-3 mb-0">Chicken Forêt</p>
+                                            <div class="d-flex">
+                                                <div>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p class="mb-0 mx-2 text-muted">(Reviews 500)</p>
+                                            </div>
                                         </div>
-                                        <div class="mt-auto d-flex justify-content-between">
-                                            <a href="#" class="graybtn">Edit</a>
-                                            <a href="#" class="redbtn">Delete</a>
-                                        </div>
+                                        <a href="#" class="youtube">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-brands fs-3 fa-youtube"></i>
+                                                <p class="mb-0 fs-5 ms-2 fw-light">Youtube</p>
+                                            </div>
+                                            <i class="fa-solid ms-4 fa-arrow-right"></i>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3 my-2">
-                                    <div class="d-flex flex-column p-3 h-100 my-border">
-                                        <div>
-                                            <img src="../imgs/stake.png" alt="" class="w-100">
-                                            <p class="my-2 small blue-text">Balsamic Glazed Pork Porterhouse, with
-                                                broccolini and roasted
-                                                fingerlings.</p>
-                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
-                                                broccolini and roasted
-                                                fingerlings.</p>
-                                        </div>
-                                        <div class="mt-auto d-flex justify-content-between">
-                                            <a href="#" class="graybtn">Edit</a>
-                                            <a href="#" class="redbtn">Delete</a>
+                                    <div class="mt-3">
+                                        <p>Basil parmesan egg-battered chicken breast over basil and Parmesan cheese risotto, with a sherry butter finish.</p>
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 fw-bold border-end border-3 pe-2">Tags :</p>
+                                            <button class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Vegitarian</button>
+                                            <button class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Winter Meat</button>
+                                            <button class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Gluten-Free</button>
                                         </div>
                                     </div>
                                 </div>
@@ -214,7 +185,20 @@
     <script src="https://kit.fontawesome.com/f9a70f49f9.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/main.js"></script>
+    <script>
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+
+    </script>
 </body>
 
 </html>

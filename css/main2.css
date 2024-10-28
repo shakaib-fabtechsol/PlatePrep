@@ -70,3 +70,42 @@
     background: #fff;
     color: #9C9C9C;
 }
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '-';
+    text-align: center;
+    opacity:1;
+    color: #D9D9D9;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-star{
+    color: #FCDC0F;
+}
+.youtube{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: var(--red);
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
