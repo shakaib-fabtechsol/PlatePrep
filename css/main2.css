@@ -254,9 +254,14 @@
 }
 
 
-.ingredient-row, .essential-row, .step-row,.Starch-preparation-row, .Design-row {
+.ingredient-row, .essential-row, .step-row,.Starch-preparation-row, .Design-row, .Comment-row {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+}
+.Predefined-row {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
 }
 

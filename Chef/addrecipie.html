@@ -111,7 +111,8 @@
                     <div class="overflow-y-auto h-100 p-2">
                         <div class="container-fluid">
                             <h2>Add New Recipe</h2>
-                            <div class="row align-items-center justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
+                            <div
+                                class="row align-items-center justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
                                 <p class="fs-5">Create Plate</p>
 
                                 <form action="">
@@ -129,32 +130,39 @@
                                         </div>
                                         <div class="col-4 mt-3">
                                             <label for="dishname">Dish Name</label>
-                                            <input type="text" id="dishname" class="form-control focus-none" placeholder="Type here">
-                                        </div> 
+                                            <input type="text" id="dishname" class="form-control focus-none"
+                                                placeholder="Type here">
+                                        </div>
                                         <div class="col-4 mt-3">
                                             <label for="Cuisine">Cuisine type</label>
-                                            <input type="text" id="Cuisine" class="form-control focus-none" placeholder="Type here">
-                                        </div> 
+                                            <input type="text" id="Cuisine" class="form-control focus-none"
+                                                placeholder="Type here">
+                                        </div>
                                         <div class="col-4 mt-3">
                                             <label for="Preparation">Preparation time</label>
-                                            <input type="text" id="Preparation" class="form-control focus-none" placeholder="Type here">
-                                        </div> 
+                                            <input type="text" id="Preparation" class="form-control focus-none"
+                                                placeholder="Type here">
+                                        </div>
                                         <div class="col-4 mt-3">
                                             <label for="Food">Food cost</label>
-                                            <input type="text" id="Food" class="form-control focus-none" placeholder="Type here">
-                                        </div> 
+                                            <input type="text" id="Food" class="form-control focus-none"
+                                                placeholder="Type here">
+                                        </div>
                                         <div class="col-4 mt-3">
                                             <label for="Wine">Wine pairing</label>
-                                            <input type="text" id="Wine" class="form-control focus-none" placeholder="Type here">
-                                        </div> 
+                                            <input type="text" id="Wine" class="form-control focus-none"
+                                                placeholder="Type here">
+                                        </div>
                                         <div class="col-4 mt-3">
                                             <label for="Station">Station to prepare dish</label>
-                                            <input type="text" id="Station" class="form-control focus-none" placeholder="Type here">
-                                        </div> 
+                                            <input type="text" id="Station" class="form-control focus-none"
+                                                placeholder="Type here">
+                                        </div>
                                         <div class="col-12 mt-3">
                                             <label for="Youtube">Youtube URL</label>
-                                            <input type="url" id="Youtube" class="form-control focus-none" placeholder="Type here">
-                                        </div> 
+                                            <input type="url" id="Youtube" class="form-control focus-none"
+                                                placeholder="Type here">
+                                        </div>
                                         <div class="mt-3">
                                             <div class="form-group full-width">
                                                 <label>Tags</label>
@@ -162,18 +170,22 @@
                                                     <div class="tags">
                                                         <!-- Tags will be added here -->
                                                     </div>
-                                                    <input type="text" id="tag-input" placeholder="Type and press Enter to add a tag" />
+                                                    <input type="text" id="tag-input"
+                                                        placeholder="Type and press Enter to add a tag" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="mt-3">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <h3>Ingredients</h3>
-                                                <button id="add-ingredient" class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Ingredient</button>
+                                                <h4>Ingredients</h4>
+                                                <button id="add-ingredient"
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add
+                                                    Ingredient</button>
                                             </div>
                                             <div id="ingredients-list">
                                                 <div class="ingredient-row mt-3">
-                                                    <input type="text" placeholder="Type here" class="form-control me-2">
+                                                    <input type="text" placeholder="Type here"
+                                                        class="form-control me-2">
                                                     <button class="spellbtn me-2">Spell Checker</button>
                                                     <input type="number" value="1" class="form-control me-2">
                                                     <select class="form-select me-2">
@@ -187,27 +199,34 @@
                                         </div>
                                         <div class="mt-3">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <h3>Essential Needed</h3>
-                                                <button id="add-essential" class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Essential</button>
-                                            </div>                                           
+                                                <h4>Essential Needed</h4>
+                                                <button id="add-essential"
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add
+                                                    Essential</button>
+                                            </div>
                                             <div id="essential-list">
                                                 <div class="essential-row mt-3">
-                                                    <input type="text" placeholder="Type here"  class="form-control me-2">
+                                                    <input type="text" placeholder="Type here"
+                                                        class="form-control me-2">
                                                     <button class="spellbtn me-2">Spell Checker</button>
-                                                    <input type="number" placeholder="Type here"  class="form-control me-2">
+                                                    <input type="number" placeholder="Type here"
+                                                        class="form-control me-2">
                                                     <button class="remove"><i class="fa-solid fa-x"></i></button>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="mt-3">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <h3>Steps</h3>
-                                                <button id="add-step" class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Step</button>
-                                            </div>  
+                                                <h4>Steps</h4>
+                                                <button id="add-step"
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add
+                                                    Step</button>
+                                            </div>
                                             <div id="steps-list">
                                                 <div class="step-row mt-3">
-                                                    <input type="text" placeholder="Type step here" class="form-control me-2">
+                                                    <input type="text" placeholder="Type step here"
+                                                        class="form-control me-2">
                                                     <button class="spellbtn me-2">Spell Checker</button>
                                                     <button class="remove"><i class="fa-solid fa-x"></i></button>
                                                 </div>
@@ -215,12 +234,15 @@
                                         </div>
                                         <div class="mt-3">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <h3>Starch preparation</h3>
-                                                <button id="add-Starch-preparation" class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Starch preparation</button>
-                                            </div>  
+                                                <h4>Starch preparation</h4>
+                                                <button id="add-Starch-preparation"
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Starch
+                                                    preparation</button>
+                                            </div>
                                             <div id="Starch-preparation-list">
                                                 <div class="Starch-preparation-row mt-3">
-                                                    <input type="text" placeholder="Type here" class="form-control me-2">
+                                                    <input type="text" placeholder="Type here"
+                                                        class="form-control me-2">
                                                     <button class="spellbtn me-2">Spell Checker</button>
                                                     <button class="remove"><i class="fa-solid fa-x"></i></button>
                                                 </div>
@@ -228,12 +250,77 @@
                                         </div>
                                         <div class="mt-3">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <h3>Design your plate</h3>
-                                                <button id="add-Design" class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Design</button>
-                                            </div>  
+                                                <h4>Design your plate</h4>
+                                                <button id="add-Design"
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add
+                                                    Design</button>
+                                            </div>
                                             <div id="Design-list">
                                                 <div class="Design-row mt-3">
-                                                    <input type="text" placeholder="Type here" class="form-control me-2">
+                                                    <input type="text" placeholder="Type here"
+                                                        class="form-control me-2">
+                                                    <button class="spellbtn me-2">Spell Checker</button>
+                                                    <button class="remove"><i class="fa-solid fa-x"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4>Predefined Ingridients</h4>
+                                                <button id="add-Predefined"
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add
+                                                    Ingridients</button>
+                                            </div>
+                                            <div id="Predefined-list">
+                                                <div class="Predefined-row mt-3">
+                                                    <div class="d-flex align-items-start">
+                                                        <div class="w-100">
+                                                            <div class="d-flex">
+                                                                <select name="" id="" class="form-select me-2">
+                                                                    <option value="Onion">Onion</option>
+                                                                    <option value="Tomatoes">Tomatoes</option>
+                                                                    <option value="Garlic">Garlic</option>
+                                                                    <option value="Olive Oil">Olive Oil</option>
+                                                                </select>
+                                                            </div>
+                                                            <div>
+                                                                <h4 class="mt-3">Availability</h4>
+                                                                <div class="d-flex">
+                                                                    <div class="me-3">
+                                                                        <input type="checkbox" id="Available"
+                                                                        class="form-check-input">
+                                                                        <label for="Available">Available</label>
+                                                                    </div>
+                                                                    <div class="me-3">
+                                                                        <input type="checkbox" id="Lowstock"
+                                                                        class="form-check-input">
+                                                                        <label for="Lowstock">Low stock</label>
+                                                                    </div>
+                                                                    <div class="me-3">
+                                                                        <input type="checkbox" id="Outoffstock"
+                                                                        class="form-check-input">
+                                                                        <label for="Outoffstock">Out off stock</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="remove"><i class="fa-solid fa-x"></i></button>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4>Cooking Deviation Comment</h4>
+                                                <button id="add-Comment"
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Comment</button>
+                                            </div>
+                                            <div id="Comment-list">
+                                                <div class="Comment-row mt-3">
+                                                    <input type="text" placeholder="Type here"
+                                                        class="form-control me-2">
                                                     <button class="spellbtn me-2">Spell Checker</button>
                                                     <button class="remove"><i class="fa-solid fa-x"></i></button>
                                                 </div>
@@ -241,7 +328,6 @@
                                         </div>
                                     </div>
                                 </form>
-                                
                             </div>
                         </div>
                     </div>
@@ -256,40 +342,40 @@
     <script src="../js/main.js"></script>
     <script>
         //Script to show image name
-        document.getElementById('uploads').addEventListener('change', function() {
+        document.getElementById('uploads').addEventListener('change', function () {
             const fileInput = this;
             const uploadText = document.getElementById('upload-text');
-        
+
             if (fileInput.files.length > 0) {
                 const fileNames = Array.from(fileInput.files).map(file => file.name).join(', ');
-                uploadText.textContent = fileNames;  
+                uploadText.textContent = fileNames;
             } else {
                 uploadText.textContent = 'Upload Image';
             }
         });
-        
+
     </script>
-    
+
     <script>
         //Script to create tags
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const input = document.getElementById('tag-input');
             const tagContainer = document.querySelector('.tags');
-    
-            input.addEventListener('keypress', function(e) {
+
+            input.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') {
                     e.preventDefault();
                     const tagText = input.value.trim();
-    
+
                     if (tagText !== '') {
                         const newTag = document.createElement('span');
                         newTag.classList.add('tag');
-                            const textNode = document.createTextNode(tagText);
+                        const textNode = document.createTextNode(tagText);
                         newTag.appendChild(textNode);
-                            const removeIcon = document.createElement('span');
+                        const removeIcon = document.createElement('span');
                         removeIcon.classList.add('remove-tag');
-                        removeIcon.innerHTML = '<i class="fa-solid fa-x"></i>'; 
-                        removeIcon.addEventListener('click', function() {
+                        removeIcon.innerHTML = '<i class="fa-solid fa-x"></i>';
+                        removeIcon.addEventListener('click', function () {
                             newTag.remove();
                         });
                         newTag.appendChild(removeIcon);
@@ -301,10 +387,10 @@
         });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
 
             // Adding Ingredients
-            document.getElementById('add-ingredient').addEventListener('click', function(e) {
+            document.getElementById('add-ingredient').addEventListener('click', function (e) {
                 e.preventDefault();
                 let ingredientRow = document.createElement('div');
                 ingredientRow.classList.add('ingredient-row');
@@ -322,9 +408,9 @@
                 document.getElementById('ingredients-list').appendChild(ingredientRow);
                 attachRemoveHandler(ingredientRow.querySelector('.remove'));
             });
-        
+
             // Adding Essentials
-            document.getElementById('add-essential').addEventListener('click', function(e) {
+            document.getElementById('add-essential').addEventListener('click', function (e) {
                 e.preventDefault();
                 let essentialRow = document.createElement('div');
                 essentialRow.classList.add('essential-row');
@@ -337,9 +423,9 @@
                 document.getElementById('essential-list').appendChild(essentialRow);
                 attachRemoveHandler(essentialRow.querySelector('.remove'));
             });
-        
+
             // Adding Steps
-            document.getElementById('add-step').addEventListener('click', function(e) {
+            document.getElementById('add-step').addEventListener('click', function (e) {
                 e.preventDefault();
                 let stepRow = document.createElement('div');
                 stepRow.classList.add('step-row');
@@ -353,7 +439,7 @@
             });
 
             // Adding Starch preparation
-            document.getElementById('add-Starch-preparation').addEventListener('click', function(e) {
+            document.getElementById('add-Starch-preparation').addEventListener('click', function (e) {
                 e.preventDefault();
                 let stepRow = document.createElement('div');
                 stepRow.classList.add('Starch-preparation-row');
@@ -365,8 +451,9 @@
                 document.getElementById('Starch-preparation-list').appendChild(stepRow);
                 attachRemoveHandler(stepRow.querySelector('.remove'));
             });
+
             // Adding Design
-            document.getElementById('add-Design').addEventListener('click', function(e) {
+            document.getElementById('add-Design').addEventListener('click', function (e) {
                 e.preventDefault();
                 let stepRow = document.createElement('div');
                 stepRow.classList.add('Design-row');
@@ -378,23 +465,80 @@
                 document.getElementById('Design-list').appendChild(stepRow);
                 attachRemoveHandler(stepRow.querySelector('.remove'));
             });
-            
+
+            // Adding Predefined
+            document.getElementById('add-Predefined').addEventListener('click', function (e) {
+                e.preventDefault();
+                let stepRow = document.createElement('div');
+                stepRow.classList.add('Predefined-row');
+                stepRow.innerHTML = `
+                    <div class="d-flex align-items-start">
+                        <div class="w-100">
+                            <div class="d-flex">
+                                <select name="" id="" class="form-select me-2">
+                                    <option value="Onion">Onion</option>
+                                    <option value="Tomatoes">Tomatoes</option>
+                                    <option value="Garlic">Garlic</option>
+                                    <option value="Olive Oil">Olive Oil</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h4 class="mt-3">Availability</h4>
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <input type="checkbox" id="Available"
+                                        class="form-check-input">
+                                        <label for="Available">Available</label>
+                                    </div>
+                                    <div class="me-3">
+                                        <input type="checkbox" id="Lowstock"
+                                        class="form-check-input">
+                                        <label for="Lowstock">Low stock</label>
+                                    </div>
+                                    <div class="me-3">
+                                        <input type="checkbox" id="Outoffstock"
+                                        class="form-check-input">
+                                        <label for="Outoffstock">Out off stock</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="remove"><i class="fa-solid fa-x"></i></button>
+                    </div>
+                `;
+                document.getElementById('Predefined-list').appendChild(stepRow);
+                attachRemoveHandler(stepRow.querySelector('.remove'));
+            });
+
+            // Adding Comment
+            document.getElementById('add-Comment').addEventListener('click', function (e) {
+                e.preventDefault();
+                let stepRow = document.createElement('div');
+                stepRow.classList.add('Comment-row');
+                stepRow.innerHTML = `
+                    <input type="text" placeholder="Type step here" class="form-control me-2">
+                    <button class="spellbtn me-2">Spell Checker</button>
+                    <button class="remove"><i class="fa-solid fa-x"></i></button>
+                `;
+                document.getElementById('Comment-list').appendChild(stepRow);
+                attachRemoveHandler(stepRow.querySelector('.remove'));
+            });
             // Remove row handler
             function attachRemoveHandler(button) {
-                button.addEventListener('click', function(e) {
+                button.addEventListener('click', function (e) {
                     e.preventDefault();
                     button.parentElement.remove();
                 });
             }
-        
+
             // Attach remove handlers for initial rows
-            document.querySelectorAll('.remove').forEach(function(button) {
+            document.querySelectorAll('.remove').forEach(function (button) {
                 attachRemoveHandler(button);
             });
         });
-        
+
     </script>
-    
+
 </body>
 
 </html>
