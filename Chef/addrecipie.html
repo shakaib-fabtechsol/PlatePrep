@@ -288,17 +288,17 @@
                                                                 <div class="d-flex">
                                                                     <div class="me-3">
                                                                         <input type="checkbox" id="Available"
-                                                                        class="form-check-input">
+                                                                            class="form-check-input">
                                                                         <label for="Available">Available</label>
                                                                     </div>
                                                                     <div class="me-3">
                                                                         <input type="checkbox" id="Lowstock"
-                                                                        class="form-check-input">
+                                                                            class="form-check-input">
                                                                         <label for="Lowstock">Low stock</label>
                                                                     </div>
                                                                     <div class="me-3">
                                                                         <input type="checkbox" id="Outoffstock"
-                                                                        class="form-check-input">
+                                                                            class="form-check-input">
                                                                         <label for="Outoffstock">Out off stock</label>
                                                                     </div>
                                                                 </div>
@@ -315,10 +315,27 @@
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <h4>Cooking Deviation Comment</h4>
                                                 <button id="add-Comment"
-                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Comment</button>
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add
+                                                    Comment</button>
                                             </div>
                                             <div id="Comment-list">
                                                 <div class="Comment-row mt-3">
+                                                    <input type="text" placeholder="Type here"
+                                                        class="form-control me-2">
+                                                    <button class="spellbtn me-2">Spell Checker</button>
+                                                    <button class="remove"><i class="fa-solid fa-x"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4>Real-time Variable Comment</h4>
+                                                <button id="add-Variable"
+                                                    class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add
+                                                    Variable</button>
+                                            </div>
+                                            <div id="Variable-list">
+                                                <div class="Variable-row mt-3">
                                                     <input type="text" placeholder="Type here"
                                                         class="form-control me-2">
                                                     <button class="spellbtn me-2">Spell Checker</button>
@@ -354,9 +371,6 @@
             }
         });
 
-    </script>
-
-    <script>
         //Script to create tags
         document.addEventListener('DOMContentLoaded', function () {
             const input = document.getElementById('tag-input');
@@ -385,8 +399,8 @@
                 }
             });
         });
-    </script>
-    <script>
+
+        // Adding Logics 
         document.addEventListener('DOMContentLoaded', function () {
 
             // Adding Ingredients
@@ -523,6 +537,21 @@
                 document.getElementById('Comment-list').appendChild(stepRow);
                 attachRemoveHandler(stepRow.querySelector('.remove'));
             });
+
+            // Adding Variable
+            document.getElementById('add-Variable').addEventListener('click', function (e) {
+                e.preventDefault();
+                let stepRow = document.createElement('div');
+                stepRow.classList.add('Variable-row');
+                stepRow.innerHTML = `
+                    <input type="text" placeholder="Type step here" class="form-control me-2">
+                    <button class="spellbtn me-2">Spell Checker</button>
+                    <button class="remove"><i class="fa-solid fa-x"></i></button>
+                `;
+                document.getElementById('Variable-list').appendChild(stepRow);
+                attachRemoveHandler(stepRow.querySelector('.remove'));
+            });
+
             // Remove row handler
             function attachRemoveHandler(button) {
                 button.addEventListener('click', function (e) {
@@ -535,6 +564,7 @@
             document.querySelectorAll('.remove').forEach(function (button) {
                 attachRemoveHandler(button);
             });
+
         });
 
     </script>
