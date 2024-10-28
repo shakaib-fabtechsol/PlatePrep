@@ -226,6 +226,19 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="mt-3">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h3>Design your plate</h3>
+                                                <button id="add-Design" class="bg-main-blue px-3 py-2 text-white rounded-3 mx-0">Add Design</button>
+                                            </div>  
+                                            <div id="Design-list">
+                                                <div class="Design-row mt-3">
+                                                    <input type="text" placeholder="Type here" class="form-control me-2">
+                                                    <button class="spellbtn me-2">Spell Checker</button>
+                                                    <button class="remove"><i class="fa-solid fa-x"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
                                 
@@ -352,7 +365,20 @@
                 document.getElementById('Starch-preparation-list').appendChild(stepRow);
                 attachRemoveHandler(stepRow.querySelector('.remove'));
             });
-        
+            // Adding Design
+            document.getElementById('add-Design').addEventListener('click', function(e) {
+                e.preventDefault();
+                let stepRow = document.createElement('div');
+                stepRow.classList.add('Design-row');
+                stepRow.innerHTML = `
+                    <input type="text" placeholder="Type step here" class="form-control me-2">
+                    <button class="spellbtn me-2">Spell Checker</button>
+                    <button class="remove"><i class="fa-solid fa-x"></i></button>
+                `;
+                document.getElementById('Design-list').appendChild(stepRow);
+                attachRemoveHandler(stepRow.querySelector('.remove'));
+            });
+            
             // Remove row handler
             function attachRemoveHandler(button) {
                 button.addEventListener('click', function(e) {
