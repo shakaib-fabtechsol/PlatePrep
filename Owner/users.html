@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <title>Document</title>
+</head>
+
+<body class="template-body">
+    <section>
+        <div class="template-main d-flex">
+            <div class="template-left d-xl-block" id="template-left">
+                <div class="d-flex flex-column justify-content-between h-100 px-1 py-4">
+                    <div class="template-left-top d-flex justify-content-center">
+                        <a class="text-decoration-none" href="#"><img class="template-logo" src="../imgs/db-logo.png"
+                                alt="Logo"></a>
+                    </div>
+                    <div class="template-left-mid px-2 overflow-y-auto">
+                        <ul class=" list-unstyled mb-0">
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center active text-start w-100" href="#">
+                                    <div><img class="icon-image me-2" src="../imgs/dashboard-blue.png" alt="img"></div>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/users.png" alt="img"></div>
+                                    <span>Users</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/menu.png" alt="img"></div>
+                                    <span>Generate Menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/schedule.png" alt="img"></div>
+                                    <span>Scheduling and Release Management</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/win-type.png" alt="img"></div>
+                                    <span>Win Types</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/tracking.png" alt="img"></div>
+                                    <span>Tracking</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/tasks.png" alt="img"></div>
+                                    <span>Tasks</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/templates.png" alt="img"></div>
+                                    <span>Templates</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/wave.png" alt="img"></div>
+                                    Staff Permission
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="template-left-bottom">
+                        <div class="d-flex justify-content-center px-4">
+                            <a class="text-decoration-none text-white d-flex align-items-center justify-content-center fw-medium rounded-3 border border-2 border-blue py-3 w-100"
+                                href="#">
+                                <div>
+                                    <img class="icon-image me-3" src="../imgs/logout.png" alt="img">
+                                </div>
+                                <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="template-right pt-xl-4 px-xl-4">
+                <div
+                    class="template-right-top bg-main-blue text-white p-4 rounded-4 d-flex justify-content-between align-items-center">
+                    <div class="col-5 col-xl-4 d-none d-md-block">
+                        <form action="">
+                            <div class="d-flex align-items-center bg-white rounded px-2">
+                                <label for="search"><i class="fa-solid fa-magnifying-glass text-blue me-2"></i></label>
+                                <input id="search" class="w-100  border-0 bg-transparent focus-none  py-2" type="search"
+                                    name="search" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex align-items-center ms-auto">
+                        <div class="tr-top-links">
+                            <a class="text-decoration-none me-2 ms-0 mx-sm-2 " href="#">
+                                <img class="tr-top-images" src="../imgs/Question.png" alt="img">
+                            </a>
+                            <a class="text-decoration-none me-2 ms-0 mx-sm-2 " href="#">
+                                <img class="tr-top-images" src="../imgs/Bell.png" alt="img">
+                            </a>
+                            <a class="text-decoration-none me-2 ms-0 mx-sm-2 " href="#">
+                                <img class="tr-top-images" src="../imgs/Gear.png" alt="img">
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <img class="template-prifile-img mx-2" src="../imgs/template-profile-img.png" alt="">
+                            </div>
+                            <div class="mx-2 d-none d-sm-block">
+                                <h4 class="mb-0 lh-1 fs-6">Wade Warren</h4>
+                                <p class="mb-0 lh-1 small">wade.warren@mail.com</p>
+                            </div>
+                        </div>
+                        <div class="tem-bar-btn fs-3 ms-3 pointer d-xl-none" onclick="displayToggle()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tem-right-btm p-2 pt-4">
+                    <div class="overflow-y-auto h-100">
+                        <div class="container-fluid h-100">
+                            <div class="d-flex my-3 justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="fw-semibold mb-0">All User</h2>
+                                </div>
+                                <div>
+                                    <a class="btn-main-blue px-4" href="add-user.html">Add User</a>
+                                </div>
+                            </div>
+                            <div class="user-table h-100 bg-white overflow-auto rounded-4 my-shadow p-2">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>User ID</th>
+                                            <th>User Name</th>
+                                            <th>Email</th>
+                                            <th>Address</th>
+                                            <th>Users Role</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg" alt="img">
+                                                    <p class="mb-0">Brandy Ajohn</p>
+                                                </div>
+                                            </td>
+                                            <td>john.doe@example.com</td>
+                                            <td><p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p></td>
+                                            <td>
+                                                <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head Chef</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 bg-green-btn text-center p-2 fw-medium rounded-pill">Active</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a class="mx-2 text-decoration-none text-dark-blue" href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-blue" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-red" href="#"><i class="fa-solid fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg" alt="img">
+                                                    <p class="mb-0">Brandy Ajohn</p>
+                                                </div>
+                                            </td>
+                                            <td>john.doe@example.com</td>
+                                            <td><p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p></td>
+                                            <td>
+                                                <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Staff</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 bg-red-btn text-center p-2 fw-medium rounded-pill">Inactive</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a class="mx-2 text-decoration-none text-dark-blue" href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-blue" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-red" href="#"><i class="fa-solid fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg" alt="img">
+                                                    <p class="mb-0">Brandy Ajohn</p>
+                                                </div>
+                                            </td>
+                                            <td>john.doe@example.com</td>
+                                            <td><p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p></td>
+                                            <td>
+                                                <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head Chef</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 bg-red-btn text-center p-2 fw-medium rounded-pill">Inactive</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a class="mx-2 text-decoration-none text-dark-blue" href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-blue" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-red" href="#"><i class="fa-solid fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg" alt="img">
+                                                    <p class="mb-0">Brandy Ajohn</p>
+                                                </div>
+                                            </td>
+                                            <td>john.doe@example.com</td>
+                                            <td><p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p></td>
+                                            <td>
+                                                <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Staff</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 bg-green-btn text-center p-2 fw-medium rounded-pill">Active</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a class="mx-2 text-decoration-none text-dark-blue" href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-blue" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-red" href="#"><i class="fa-solid fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg" alt="img">
+                                                    <p class="mb-0">Brandy Ajohn</p>
+                                                </div>
+                                            </td>
+                                            <td>john.doe@example.com</td>
+                                            <td><p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p></td>
+                                            <td>
+                                                <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head Chef</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 bg-red-btn text-center p-2 fw-medium rounded-pill">Inactive</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a class="mx-2 text-decoration-none text-dark-blue" href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-blue" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-red" href="#"><i class="fa-solid fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg" alt="img">
+                                                    <p class="mb-0">Brandy Ajohn</p>
+                                                </div>
+                                            </td>
+                                            <td>john.doe@example.com</td>
+                                            <td><p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p></td>
+                                            <td>
+                                                <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head Chef</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 bg-green-btn text-center p-2 fw-medium rounded-pill">Active</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a class="mx-2 text-decoration-none text-dark-blue" href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-blue" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-red" href="#"><i class="fa-solid fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg" alt="img">
+                                                    <p class="mb-0">Brandy Ajohn</p>
+                                                </div>
+                                            </td>
+                                            <td>john.doe@example.com</td>
+                                            <td><p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p></td>
+                                            <td>
+                                                <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head Chef</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 bg-green-btn text-center p-2 fw-medium rounded-pill">Active</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a class="mx-2 text-decoration-none text-dark-blue" href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-blue" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-red" href="#"><i class="fa-solid fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg" alt="img">
+                                                    <p class="mb-0">Brandy Ajohn</p>
+                                                </div>
+                                            </td>
+                                            <td>john.doe@example.com</td>
+                                            <td><p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p></td>
+                                            <td>
+                                                <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Manager</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 bg-red-btn text-center p-2 fw-medium rounded-pill">Inactive</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a class="mx-2 text-decoration-none text-dark-blue" href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-blue" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a class="mx-2 text-decoration-none text-red" href="#"><i class="fa-solid fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/f9a70f49f9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -95,6 +95,8 @@ body {
     --custom-secondary: rgba(32, 34, 36, 1);
     --bd-active-link: rgba(153, 195, 255, 1);
     --bg-custom-gray:rgba(245, 245, 245, 1);
+    --bg-green-btn:rgba(86, 202, 0, 1);
+    --bg-red-btn:rgba(255, 0, 0, 1);
 
 }
 
@@ -114,6 +116,15 @@ body {
 .bg-main-blue {
     background-color: var(--dashboard-bg);
 }
+.bg-light-blue{
+    background-color: var(--bd-active-link);
+}
+.bg-green-btn{
+    background-color: var(--bg-green-btn);
+}
+.bg-red-btn{
+    background-color: var(--bg-red-btn);
+}
 .bg-custom-gray{
     background-color: var(--bg-custom-gray);
 }
@@ -126,11 +137,20 @@ body {
 .text-dark-blue{
     color: var(--dashboard-bg);
 }
+.text-red{
+    color: var(--bg-red-btn);
+}
 
 .border-blue {
     border-color: var(--bd-active-link) !important;
 }
-
+.btn-main-blue{
+    background-color: var(--dashboard-bg);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+}
 .template-body {
     background-color: rgba(241, 241, 244, 1);
 }
