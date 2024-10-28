@@ -205,3 +205,50 @@
   background: #fff;
   transition: width 150ms ease 100ms;
 }
+.upload-box {
+    border: 2px dashed #d3d3d3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+.tags-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #99C3FF;
+    color: white;
+    padding: 10px 20px;
+    margin: 2px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 16px;
+    position: relative; 
+}
+
+.remove-tag {
+    margin-left: 15px; 
+    cursor: pointer;
+    font-size: 12px;
+    color: white; 
+}
+
+#tag-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 14px;
+    padding: 5px;
+    margin: 2px;
+}
