@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <title>Recipe</title>
+</head>
+
+<body class="template-body">
+    <section>
+        <div class="template-main d-flex">
+            <div class="template-left d-xl-block" id="template-left">
+                <div class="d-flex flex-column justify-content-between h-100 px-1 py-4">
+                    <div class="template-left-top d-flex justify-content-center">
+                        <a class="text-decoration-none" href="#"><img class="template-logo" src="../imgs/db-logo.png"
+                                alt="Logo"></a>
+                    </div>
+
+                    <div class="template-left-mid px-2 overflow-y-auto">
+                        <ul class=" list-unstyled mb-0">
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center active w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/menu-blue.png" alt="img"></div>
+                                    <span>Generate Menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/schedule.png" alt="img"></div>
+                                    <span>Scheduling and Release Management</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/win-type.png" alt="img"></div>
+                                    <span>Win Types</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/tasks.png" alt="img"></div>
+                                    <span>Tasks</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/templates.png" alt="img"></div>
+                                    <span>Templates</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="template-left-bottom">
+                        <div class="d-flex justify-content-center px-4">
+                            <a class="text-decoration-none text-white d-flex align-items-center justify-content-center fw-medium rounded-3 border border-2 border-blue py-3 w-100"
+                                href="#">
+                                <div>
+                                    <img class="icon-image me-3" src="../imgs/logout.png" alt="img">
+                                </div>
+                                <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="template-right pt-xl-4 px-xl-4">
+                <div
+                    class="template-right-top bg-main-blue text-white p-4 rounded-4 d-flex justify-content-between align-items-center">
+                    <div class="col-5 col-xl-4 d-none d-md-block">
+                        <form action="">
+                            <div class="d-flex align-items-center bg-white rounded px-2">
+                                <label for="search"><i class="fa-solid fa-chevron-down text-blue me-2"></i></label>
+                                <input id="search" class="w-100  border-0 bg-transparent focus-none  py-2" type="search"
+                                    name="search" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex align-items-center ms-auto">
+                        <div class="tr-top-links">
+                            <a class="text-decoration-none me-2 ms-0 mx-sm-2 " href="#">
+                                <img class="tr-top-images" src="../imgs/Question.png" alt="img">
+                            </a>
+                            <a class="text-decoration-none me-2 ms-0 mx-sm-2 " href="#">
+                                <img class="tr-top-images" src="../imgs/Bell.png" alt="img">
+                            </a>
+                            <a class="text-decoration-none me-2 ms-0 mx-sm-2 " href="#">
+                                <img class="tr-top-images" src="../imgs/Gear.png" alt="img">
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <img class="template-prifile-img mx-2" src="../imgs/template-profile-img.png" alt="">
+                            </div>
+                            <div class="mx-2 d-none d-sm-block">
+                                <h4 class="mb-0 lh-1 fs-6">Wade Warren</h4>
+                                <p class="mb-0 lh-1 small">wade.warren@mail.com</p>
+                            </div>
+                        </div>
+                        <div class="tem-bar-btn fs-3 ms-3 pointer d-xl-none" onclick="displayToggle()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tem-right-btm p-2 pt-4">
+                    <div class="overflow-y-auto h-100 p-2">
+                        <div class="container-fluid">
+                            <div class="row align-items-center justify-content-between ">
+                                <div class="col-md-6 col-lg-4">
+                                    <h2>Recipe</h2>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="graybtn">Edit</a>
+                                        <a href="#" class="redbtn">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-top justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
+                                <div class="col-md-6">
+                                    <div class="slider">
+                                        <img src="/imgs/slider.png">
+                                        <img src="/imgs/slider.png">
+                                        <img src="/imgs/slider.png">
+                                        <img src="/imgs/slider.png">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="searchbar">
+                                        <i class="fa-solid fa-paperclip mx-2 fs-5 text-muted"></i>
+                                        <input type="text" class="searchinput focus-none"
+                                            placeholder="Search Dish Name">
+                                        <button
+                                            class="d-flex align-items-center p-2 border-0 rounded-3 bg-main-blue text-white">
+                                            <i class="fa-regular mx-1 fa-copy"></i>Copy</button>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-3 border-bottom pb-4">
+                                        <div>
+                                            <p class="fs-3 mb-0">Chicken Forêt</p>
+                                            <div class="d-flex">
+                                                <div>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p class="mb-0 mx-2 text-muted">(Reviews 500)</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="youtube">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-brands fs-3 fa-youtube"></i>
+                                                <p class="mb-0 fs-5 ms-2 fw-light">Youtube</p>
+                                            </div>
+                                            <i class="fa-solid ms-4 fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="mt-3">
+                                        <p>Basil parmesan egg-battered chicken breast over basil and Parmesan cheese
+                                            risotto, with a sherry butter finish.</p>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <p class="mb-0 fw-bold border-end border-3 pe-2">Tags :</p>
+                                            <button
+                                                class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Vegitarian</button>
+                                            <button
+                                                class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Winter
+                                                Meat</button>
+                                            <button
+                                                class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Gluten-Free</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center text-blues">
+                                    <i class="fa-solid fa-stroopwafel"></i>
+                                    <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Cuisine type:
+                                        </span>Italian</p>
+                                </div>
+                                <div class="d-flex align-items-center text-blues">
+                                    <i class="fa-solid fa-stroopwafel"></i>
+                                    <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Preparation Time:
+                                        </span>45 min</p>
+                                </div>
+                                <div class="d-flex align-items-center text-blues">
+                                    <i class="fa-solid fa-stroopwafel"></i>
+                                    <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Food cost:
+                                        </span>$3.67</p>
+                                </div>
+                                <div class="d-flex align-items-center text-blues">
+                                    <i class="fa-solid fa-stroopwafel"></i>
+                                    <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Wine Pairing:
+                                        </span>Pinot Grigio, Red - Burgundy</p>
+                                </div>
+                                <div class="d-flex align-items-center text-blues">
+                                    <i class="fa-solid fa-stroopwafel"></i>
+                                    <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Station to prepare
+                                            dish: </span>Cold side</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-top justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
+                                <div class="col-md-4">
+                                    <p class="fs-4">Ingredients</p>
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="check-1" name="check" value="" />
+                                            <label for="check-1">
+                                                <span></span>1 Yellow Onion
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="check-2" name="check" value="" />
+                                            <label for="check-2">
+                                                <span></span>1 Clove
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="check-3" name="check" value="" />
+                                            <label for="check-3">
+                                                <span></span>1 Tsp Oil
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="check-4" name="check" value="" />
+                                            <label for="check-4">
+                                                <span></span>About 500 g Minced Meat
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="check-5" name="check" value="" />
+                                            <label for="check-5">
+                                                <span></span>2 Carrots
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="check-6" name="check" value="" />
+                                            <label for="check-6">
+                                                <span></span>500 g Crushed Tomatoes
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="check-7" name="check" value="" />
+                                            <label for="check-7">
+                                                <span></span>500 g Shrimps
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="fs-4">Essential Needed</p>
+                                    <ul>
+                                        <li class="border-bottom border-1 border-muted pb-2 my-4">2 Bowls</li>
+                                        <li class="border-bottom border-1 border-muted pb-2 my-4">2 Saute Pans</li>
+                                        <li class="border-bottom border-1 border-muted pb-2 my-4">Tongs</li>
+                                        <li class="border-bottom border-1 border-muted pb-2 my-4">Whisk or Large Fork
+                                        </li>
+                                        <li class="border-bottom border-1 border-muted pb-2 my-4">Oven safe pan or
+                                            cooking sheet</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="fs-4">Steps</p>
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="step-check-1" name="step-check" value="" />
+                                            <label for="step-check-1">
+                                                <span></span>Preheat the oven to 400 degrees.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="step-check-2" name="step-check" value="" />
+                                            <label for="step-check-2">
+                                                <span></span>Preheat the sauté pan on the stovetop over medium-high
+                                                heat.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-1 border-muted pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="step-check-3" name="step-check" value="" />
+                                            <label for="step-check-3">
+                                                <span></span>Add the olive oil that is provided to the heated pan.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2 my-4">
+                                        <div class="checkbox-wrapper-24">
+                                            <input type="checkbox" id="step-check-4" name="step-check" value="" />
+                                            <label for="step-check-4">
+                                                <span></span>Add pre-battered chicken breast into the heated sauté pan.
+                                            </label>
+                                        </div>
+                                        <ul class="mt-3">
+                                            <li>Cook the chicken until golden brown, this will take three minutes for
+                                                each side.</li>
+                                            <li>Remove chicken from pan and place chicken in an oven-safe pan and cook
+                                                in the oven for an additional 5 minutes.</li>
+                                            <li>Reheat the sherry cream sauce in the same sauté pan that the chicken was
+                                                seared in (there is no need to wash the pan before this step).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="row align-items-center justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
+                                <div class="col-md-5">
+                                    <img src="/imgs/Risotto.png" class="w-100">
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="fs-2">Starch Preparation: Risotto</p>
+                                    <ul>
+                                        <li class="fs-5">Preheat the second sauté pan on the stove top to medium heat.
+                                        </li>
+                                        <li class="fs-5">Add the heavy cream, risotto, wilted spinach, and mushrooms
+                                            into the pan once it's hot.</li>
+                                        <li class="fs-5">Stir all contents until the cream reduces, this takes 3 to 4
+                                            minutes.</li>
+                                        <li class="fs-5">Now finish the risotto with a topping of the grated parmesan
+                                            provided.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="row align-items-center justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
+                                <div class="col-md-7">
+                                    <p class="fs-2">Design Your Plate</p>
+                                    <ul>
+                                        <li class="fs-5">Scoop risotto onto the center of the plate. Use a tablespoon to
+                                            round the risotto into a round shape and pat down the top of risotto until
+                                            flat.</li>
+                                        <li class="fs-5">Remove chicken from the oven and place the fully cooked chicken
+                                            on top of the risotto.</li>
+                                        <li class="fs-5">Pour sherry cream sauce over the chicken from the fist sauté
+                                            pan that was used to cook the chicken.</li>
+                                        <li class="fs-5">Serve and enjoy!</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="/imgs/splash.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="row align-items-center justify-content-between mt-3">
+                                <h2 class="mb-0">Our best Selling:</h2>
+                                <div class="col-sm-6 col-lg-4 col-xl-3 my-3">
+                                    <div class="d-flex flex-column p-3 h-100 my-border bg-white">
+                                        <div>
+                                            <img src="../imgs/stake.png" alt="" class="w-100">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="my-2 fw-medium blue-text">Chicken Foret</p>
+                                                <p class="my-2 fw-medium blue-text">$27.67</p>
+
+                                            </div>
+                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
+                                                broccolini and roasted
+                                                fingerlings.</p>
+                                        </div>
+                                        <div class="mt-auto d-flex justify-content-between">
+                                            <button
+                                                class="border border-1 border-muted w-100 bg-transparent rounded-pill p-2">View
+                                                info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-xl-3 my-3">
+                                    <div class="d-flex flex-column p-3 h-100 my-border bg-white">
+                                        <div>
+                                            <img src="../imgs/stake.png" alt="" class="w-100">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="my-2 fw-medium blue-text">Chicken Foret</p>
+                                                <p class="my-2 fw-medium blue-text">$27.67</p>
+
+                                            </div>
+                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
+                                                broccolini and roasted
+                                                fingerlings.</p>
+                                        </div>
+                                        <div class="mt-auto d-flex justify-content-between">
+                                            <button
+                                                class="border border-1 border-muted w-100 bg-transparent rounded-pill p-2">View
+                                                info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-xl-3 my-3">
+                                    <div class="d-flex flex-column p-3 h-100 my-border bg-white">
+                                        <div>
+                                            <img src="../imgs/stake.png" alt="" class="w-100">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="my-2 fw-medium blue-text">Chicken Foret</p>
+                                                <p class="my-2 fw-medium blue-text">$27.67</p>
+
+                                            </div>
+                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
+                                                broccolini and roasted
+                                                fingerlings.</p>
+                                        </div>
+                                        <div class="mt-auto d-flex justify-content-between">
+                                            <button
+                                                class="border border-1 border-muted w-100 bg-transparent rounded-pill p-2">View
+                                                info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-xl-3 my-3">
+                                    <div class="d-flex flex-column p-3 h-100 my-border bg-white">
+                                        <div>
+                                            <img src="../imgs/stake.png" alt="" class="w-100">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="my-2 fw-medium blue-text">Chicken Foret</p>
+                                                <p class="my-2 fw-medium blue-text">$27.67</p>
+
+                                            </div>
+                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
+                                                broccolini and roasted
+                                                fingerlings.</p>
+                                        </div>
+                                        <div class="mt-auto d-flex justify-content-between">
+                                            <button
+                                                class="border border-1 border-muted w-100 bg-transparent rounded-pill p-2">View
+                                                info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/f9a70f49f9.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+
+    </script>
+</body>
+
+</html>
