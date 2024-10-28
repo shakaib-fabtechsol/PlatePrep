@@ -5,6 +5,11 @@
     height: 20px;
     object-fit: contain;
 }
+.icon-15px{
+    width:15px;
+    height: 15px;
+    object-fit: contain;
+}
 
 .db-calender-bg{
     background-color: rgba(153, 195, 255, 1);
@@ -120,4 +125,39 @@
 .user-table thead tr th:last-child{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+.profile-detail .pd-image{
+    width: 100px;
+    height: 100px;
+}
+
+.user-info-tables{
+    max-width: 450px;
+}
+.uap-table{
+    text-wrap: nowrap;
+}
+.uap-table td{
+    text-align: center;
+    align-content: center;
+}
+.uap-table th{
+    align-content: center;
+    color: var(--custom-secondary);
+    font-weight: 500;
+}
+.uap-table tbody tr td:first-child>p{
+    text-align: start;
+    text-wrap: wrap;
+    width: 200px;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .border-slg-0{
+        border: none !important;
+    }
+    
 }

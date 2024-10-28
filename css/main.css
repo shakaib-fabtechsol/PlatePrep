@@ -92,7 +92,7 @@ body {
 :root {
     --red: #FF3030;
     --dashboard-bg: rgba(1, 34, 65, 1);
-    --custom-secondary: rgba(32, 34, 36, 1);
+    --custom-secondary: rgba(174, 172, 172, 1);
     --bd-active-link: rgba(153, 195, 255, 1);
     --bg-custom-gray:rgba(245, 245, 245, 1);
     --bg-green-btn:rgba(86, 202, 0, 1);
