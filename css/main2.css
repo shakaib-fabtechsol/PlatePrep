@@ -161,15 +161,18 @@
   background: #fff;
   transition: width 150ms ease 100ms;
 }
+
 .checkbox-wrapper-24 input[type=checkbox]:checked + label:hover span {
   background-color: #333;
   /* transform: scale(1.25); */
 }
+
 .checkbox-wrapper-24 input[type=checkbox]:checked + label:hover span:after {
   width: 10px;
   background: #fff;
   transition: width 150ms ease 100ms;
 }
+
 .checkbox-wrapper-24 input[type=checkbox]:checked + label:hover span:before {
   width: 5px;
   background: #fff;
@@ -181,9 +184,91 @@
   padding-bottom: 16px !important;
 }
 
+.upload-box {
+    border: 2px dashed #d3d3d3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.tags-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #99C3FF;
+    color: white;
+    padding: 10px 20px;
+    margin: 2px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 16px;
+    position: relative; 
+}
+
+.remove-tag {
+    margin-left: 15px; 
+    cursor: pointer;
+    font-size: 12px;
+    color: white; 
+}
+
+#tag-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 14px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.ingredient-row, .essential-row, .step-row,.Starch-preparation-row, .Design-row, .Comment-row , .Variable-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Predefined-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.spell-checker, .remove{
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.spellbtn {
+    background-color: #99C3FF;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.remove {
+    color: var(--dashboard-bg);
+    background:none;
+    border: none;
+    border-radius: 5px;
+}
+
 @media screen and (max-width:577px) {
   .border-default-none {
     border: none !important;
   }
 }
-
