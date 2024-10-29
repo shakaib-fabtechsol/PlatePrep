@@ -1,1 +1,175 @@
 /* Saim */
+
+.icon-20px{
+    width:20px;
+    height: 20px;
+    object-fit: contain;
+}
+.icon-15px{
+    width:15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.db-calender-bg{
+    background-color: rgba(153, 195, 255, 1);
+}
+.db-calender-input{
+    max-width: fit-content;
+}
+.db-slides-icon{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin:0 8px;
+}
+
+.db-overview-table td{
+    padding: 4px;
+}
+
+.db-pie-chart{
+    width: 200px;
+    height: 200px;
+}
+
+.db-table{
+    max-height: 350px;
+}
+.db-table table{
+    border-collapse: separate;
+    border-spacing:0 5px;
+}
+.db-table th{
+    background-color: var(--dashboard-bg);
+    text-wrap: nowrap;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px
+}
+.db-table td{
+    padding:16px;
+    text-wrap: nowrap;
+    align-content: center;
+    background-color: var(--bg-custom-gray);
+    border-top: 1px solid rgba(231, 231, 231, 1);
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+}
+.db-table tbody tr td:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid rgba(231, 231, 231, 1);
+}
+
+.db-table tbody tr td:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid rgba(231, 231, 231, 1);
+}
+.db-table thead tr th:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.db-table thead tr th:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.user-table-img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-table .address{
+    min-width: 200px;
+    text-wrap: wrap;
+}
+.user-table  th{
+    background-color: var(--dashboard-bg);
+    text-wrap: nowrap;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 18px;
+}
+.user-table table{
+    border-collapse: separate;
+    border-spacing:0 5px;
+}
+.user-table td{
+    padding:16px;
+    text-wrap: nowrap;
+    align-content: center;
+    background-color: var(--bg-custom-gray);
+    border-top: 1px solid rgba(231, 231, 231, 1);
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+}
+.user-table tbody tr td:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid rgba(231, 231, 231, 1);
+}
+
+.user-table tbody tr td:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid rgba(231, 231, 231, 1);
+}
+.user-table thead tr th:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.user-table thead tr th:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.profile-detail .pd-image{
+    width: 100px;
+    height: 100px;
+}
+
+.user-info-tables{
+    max-width: 450px;
+}
+.uap-table{
+    text-wrap: nowrap;
+}
+.uap-table td{
+    text-align: center;
+    align-content: center;
+}
+.uap-table th{
+    align-content: center;
+    color: var(--custom-secondary);
+    font-weight: 500;
+}
+.uap-table tbody tr td:first-child>p{
+    text-align: start;
+    text-wrap: wrap;
+    width: 200px;
+}
+.image-circle-preview{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid var(--custom-secondary);
+    background-color: #fff;
+}
+.image-circle-preview img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .border-slg-0{
+        border: none !important;
+    }
+    
+}
