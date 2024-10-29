@@ -113,18 +113,18 @@
                     <div class="overflow-y-auto h-100 p-2">
                         <div class="container-fluid">
                             <div class="row align-items-center justify-content-between ">
-                                <div class="col-md-6 col-lg-4">
-                                    <h2>Recipe</h2>
+                                <div class="col-6 col-lg-4 ps-0">
+                                    <h2 className="fw-semibold mb-0 fs-6">Recipe</h2>
                                 </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="graybtn">Edit</a>
-                                        <a href="#" class="redbtn">Delete</a>
+                                <div class="col-6 col-lg-4">
+                                    <div class="d-flex justify-content-end">
+                                        <a href="#" class="px-sm-4 px-3 py-2 rounded-3 graybtn me-3">Edit</a>
+                                        <a href="#" class="px-sm-4 px-3 py-2 rounded-3 redbtn">Delete</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="row align-items-top justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="slider">
                                         <img src="/imgs/slider.png">
                                         <img src="/imgs/slider.png">
@@ -132,83 +132,86 @@
                                         <img src="/imgs/slider.png">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="searchbar">
-                                        <i class="fa-solid fa-paperclip mx-2 fs-5 text-muted"></i>
-                                        <input type="text" class="searchinput focus-none"
+                                        <label for="searchf">
+                                            <i class="fa-solid fa-paperclip mx-2 fs-5 text-muted"></i>
+                                        </label>
+                                        <input id="searchf" type="text" class="searchinput focus-none"
                                             placeholder="Search Dish Name">
                                         <button
                                             class="d-flex align-items-center p-2 border-0 rounded-3 bg-main-blue text-white">
-                                            <i class="fa-regular mx-1 fa-copy"></i>Copy</button>
+                                            <i class="fa-regular mx-1 fa-copy"></i>
+                                            <span class="d-none d-sm-inline-block">Copy</span>
+                                        </button>
                                     </div>
-                                    <div class="d-flex justify-content-between mt-3 border-bottom pb-4">
-                                        <div>
-                                            <p class="fs-3 mb-0">Chicken Forêt</p>
-                                            <div class="d-flex">
-                                                <div>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
+                                    <div class="border-bottom pb-4">
+                                        <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between mt-4">
+                                            <h3 class="fs-3 fw-bold mb-0 me-2">Chicken Forêt</h3>
+                                            <a href="#" class="youtube rounded-3 my-2 my-sm-0 px-3 py-2 d-flex justify-content-center align-items-center text-decoration-none text-white">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fs-3 fa-youtube"></i>
+                                                    <p class="mb-0 fs-5 ms-2 fw-light">Youtube</p>
                                                 </div>
-                                                <p class="mb-0 mx-2 text-muted">(Reviews 500)</p>
-                                            </div>
+                                                <i class="fa-solid ms-4 fa-arrow-right"></i>
+                                            </a>
                                         </div>
-                                        <a href="#" class="youtube">
-                                            <div class="d-flex align-items-center">
-                                                <i class="fa-brands fs-3 fa-youtube"></i>
-                                                <p class="mb-0 fs-5 ms-2 fw-light">Youtube</p>
+                                        <div class="d-flex">
+                                            <div>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
                                             </div>
-                                            <i class="fa-solid ms-4 fa-arrow-right"></i>
-                                        </a>
+                                            <p class="mb-0 mx-2 text-muted">(Reviews 500)</p>
+                                        </div>
                                     </div>
                                     <div class="mt-3">
                                         <p>Basil parmesan egg-battered chicken breast over basil and Parmesan cheese
                                             risotto, with a sherry butter finish.</p>
-                                        <div class="d-flex flex-wrap align-items-center">
-                                            <p class="mb-0 fw-bold border-end border-3 pe-2">Tags :</p>
-                                            <button
-                                                class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Vegitarian</button>
-                                            <button
-                                                class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Winter
-                                                Meat</button>
-                                            <button
-                                                class="bg-white border border-1 border-muted rounded-pill px-3 mx-2">Gluten-Free</button>
+                                        <div class="d-sm-flex align-items-start">
+                                            <p class="mb-0 fw-bold border-default-none border-end border-3 pe-2 me-2 my-2">Tags:</p>
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <button class="bg-white border border-1 border-muted rounded-pill px-3 me-2 my-2">Vegitarian</button>
+                                                <button class="bg-white border border-1 border-muted rounded-pill px-3 me-2 my-2">Winter
+                                                    Meat</button>
+                                                <button class="bg-white border border-1 border-muted rounded-pill px-3 me-2 my-2">Gluten-Free</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
-                                <div class="d-flex align-items-center text-blues">
+                            <div class="d-flex flex-wrap align-items-center mt-3">
+                                <div class="d-flex align-items-center text-blues me-2">
                                     <i class="fa-solid fa-stroopwafel"></i>
                                     <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Cuisine type:
                                         </span>Italian</p>
                                 </div>
-                                <div class="d-flex align-items-center text-blues">
+                                <div class="d-flex align-items-center text-blues me-2">
                                     <i class="fa-solid fa-stroopwafel"></i>
                                     <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Preparation Time:
                                         </span>45 min</p>
                                 </div>
-                                <div class="d-flex align-items-center text-blues">
+                                <div class="d-flex align-items-center text-blues me-2">
                                     <i class="fa-solid fa-stroopwafel"></i>
                                     <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Food cost:
                                         </span>$3.67</p>
                                 </div>
-                                <div class="d-flex align-items-center text-blues">
+                                <div class="d-flex align-items-center text-blues me-2">
                                     <i class="fa-solid fa-stroopwafel"></i>
                                     <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Wine Pairing:
                                         </span>Pinot Grigio, Red - Burgundy</p>
                                 </div>
-                                <div class="d-flex align-items-center text-blues">
+                                <div class="d-flex align-items-center text-blues me-2">
                                     <i class="fa-solid fa-stroopwafel"></i>
                                     <p class="mb-0 mx-1"><span class="text-muted mb-0 fw-semibold">Station to prepare
                                             dish: </span>Cold side</p>
                                 </div>
                             </div>
                             <div class="row align-items-top justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
-                                <div class="col-md-4">
-                                    <p class="fs-4">Ingredients</p>
+                                <div class="col-lg-4 col-md-6">
+                                    <p class="fs-4 fw-semibold">Ingredients</p>
                                     <div class="border-bottom border-1 border-muted pb-2 my-4">
                                         <div class="checkbox-wrapper-24">
                                             <input type="checkbox" id="check-1" name="check" value="" />
@@ -272,8 +275,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <p class="fs-4">Essential Needed</p>
+                                <div class="col-lg-4 col-md-6">
+                                    <p class="fs-4 fw-semibold">Essential Needed</p>
                                     <ul>
                                         <li class="border-bottom border-1 border-muted pb-2 my-4">2 Bowls</li>
                                         <li class="border-bottom border-1 border-muted pb-2 my-4">2 Saute Pans</li>
@@ -284,8 +287,8 @@
                                             cooking sheet</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4">
-                                    <p class="fs-4">Steps</p>
+                                <div class="col-lg-4 col-md-6">
+                                    <p class="fs-4 fw-semibold">Steps</p>
                                     <div class="border-bottom border-1 border-muted pb-2 my-4">
                                         <div class="checkbox-wrapper-24">
                                             <input type="checkbox" id="step-check-1" name="step-check" value="" />
@@ -331,12 +334,12 @@
 
                             </div>
                             <div
-                                class="row align-items-center justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
-                                <div class="col-md-5">
+                                class="row flex-column-reverse flex-md-row align-items-center justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
+                                <div class="col-md-5 mt-3 mt-md-0">
                                     <img src="/imgs/Risotto.png" class="w-100">
                                 </div>
                                 <div class="col-md-7">
-                                    <p class="fs-2">Starch Preparation: Risotto</p>
+                                    <p class="fs-3 fw-semibold">Starch Preparation: Risotto</p>
                                     <ul>
                                         <li class="fs-5">Preheat the second sauté pan on the stove top to medium heat.
                                         </li>
@@ -352,7 +355,7 @@
                             <div
                                 class="row align-items-center justify-content-between bg-white rounded-4 px-1 py-3 mt-3">
                                 <div class="col-md-7">
-                                    <p class="fs-2">Design Your Plate</p>
+                                    <p class="fs-3 fw-semibold">Design Your Plate</p>
                                     <ul>
                                         <li class="fs-5">Scoop risotto onto the center of the plate. Use a tablespoon to
                                             round the risotto into a round shape and pat down the top of risotto until
@@ -364,20 +367,20 @@
                                         <li class="fs-5">Serve and enjoy!</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-5 mt-3 mt-md-0">
                                     <img src="/imgs/splash.png" class="w-100">
                                 </div>
                             </div>
-                            <div class="row align-items-center justify-content-between mt-3">
-                                <h2 class="mb-0">Our best Selling:</h2>
+                           <div>
+                            <h2 class="mb-0 mt-4 fs-4">Our best Selling:</h2>
+                            <div class="row align-items-center justify-content-between">
                                 <div class="col-sm-6 col-lg-4 col-xl-3 my-3">
-                                    <div class="d-flex flex-column p-3 h-100 my-border bg-white">
+                                    <div class="d-flex flex-wrap flex-column p-3 h-100 my-border bg-white">
                                         <div>
                                             <img src="../imgs/stake.png" alt="" class="w-100">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <p class="my-2 fw-medium blue-text">Chicken Foret</p>
                                                 <p class="my-2 fw-medium blue-text">$27.67</p>
-
                                             </div>
                                             <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with
                                                 broccolini and roasted
@@ -451,6 +454,7 @@
                                     </div>
                                 </div>
                             </div>
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -470,6 +474,7 @@
             dots: true,
             infinite: true,
             speed: 300,
+            arrows:false,
             slidesToShow: 1,
             adaptiveHeight: true
         });
