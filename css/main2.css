@@ -266,7 +266,19 @@
     border: none;
     border-radius: 5px;
 }
-
+.custom-input {
+  background: #F8F8F8 !important;
+  border: 1px solid #D7D5D5 !important;
+}
+.file-color {
+  color: #9C9C9C;
+}
+.blue-border {
+  border: 1px solid var(--dashboard-bg);
+}
+.resize-none {
+  resize: none;
+}
 @media screen and (max-width:577px) {
   .border-default-none {
     border: none !important;
