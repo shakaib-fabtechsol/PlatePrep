@@ -151,6 +151,14 @@ body {
     padding: 12px;
     border-radius: 8px;
 }
+.btn-gray-regular{
+    background-color: var(--bg-custom-gray);
+    color: var(--dashboard-bg);
+    border: 1px solid var(--dashboard-bg);
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+}
 .template-body {
     background-color: rgba(241, 241, 244, 1);
 }
