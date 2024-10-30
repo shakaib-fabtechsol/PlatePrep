@@ -534,6 +534,23 @@ label.radio-wrapper-8:hover input:checked+span:after {
     border-bottom-right-radius: 8px;
 }
 
+.wine-filter-form .form-select{
+    background-image: url(../imgs/select-bg-white.png);
+    background-size: 12px 8px;
+    background-color: var(--bd-active-link);
+    padding: 12px;
+    color: #fff;
+}
+.wine-filter-form option{
+    background-color: #fff;
+    color: #000;
+}
+
+.dish-img{
+    width: 100%;
+    max-width: 250px;
+}
+
 
 
 

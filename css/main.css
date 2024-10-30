@@ -140,7 +140,9 @@ body {
 .text-red{
     color: var(--bg-red-btn);
 }
-
+.text-12{
+    font-size: 12px;
+}
 .border-blue {
     border-color: var(--bd-active-link) !important;
 }
