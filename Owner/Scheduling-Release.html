@@ -137,12 +137,12 @@
                             <div class="mt-3">
                                 <div class="srm-tabs">
                                     <!-- Nav tabs -->
-                                    <ul class="nav nav-tabs border-0" role="tablist">
-                                        <li class="nav-item py-2 mx-auto mx-sm-0">
+                                    <ul class="nav nav-tabs " role="tablist">
+                                        <li class="nav-item pt-2 mx-auto mx-sm-0">
                                             <a class="nav-link active" data-bs-toggle="tab" href="#Dishrelease">Dish
                                                 Release Scheduling</a>
                                         </li>
-                                        <li class="nav-item py-2 mx-auto mx-sm-0">
+                                        <li class="nav-item pt-2 mx-auto mx-sm-0">
                                             <a class="nav-link" data-bs-toggle="tab" href="#Task-Automation">Task
                                                 Automation</a>
                                         </li>
@@ -154,7 +154,7 @@
                                             <div class="col-lg-10">
                                                 <form action="">
                                                     <div class="row">
-                                                        <div class="col-sm-6 my-3">
+                                                        <div class="col-sm-6 my-2">
                                                             <label for="select-dish">Select dish</label>
                                                             <select class="form-select focus-none" name="select-dish"
                                                                 id="select-dish">
@@ -173,12 +173,12 @@
 
                                                             </select>
                                                         </div>
-                                                        <div class="col-sm-6 my-3">
+                                                        <div class="col-sm-6 my-2">
                                                             <label for="release-date">Release Date & Time</label>
                                                             <input class="form-control focus-none" type="datetime-local"
                                                                 name="release-date" id="release-date">
                                                         </div>
-                                                        <div class="col-sm-6 my-3">
+                                                        <div class="col-sm-6 my-2">
                                                             <label for="assign-to">Assign to</label>
                                                             <select class="form-select focus-none" name="select-dish"
                                                                 id="select-dish">
@@ -196,47 +196,39 @@
                                                         </div>
                                                     </div>
                                                     <h4 class="mt-4">Seasons for dish</h4>
-                                                    <div class="row">
-                                                        <div class="col-sm-3 p-2">
-                                                            <div class="radio-wrapper-8 me-5">
+                                                    <div class="d-flex align-items-center flex-wrap">
+                                                            <div class="radio-wrapper-8 my-2 me-5">
                                                                 <label class="radio-wrapper-8" for="spring">
                                                                     <input id="spring" type="radio"
                                                                         name="season-for-dish">
                                                                     <span>Spring</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-sm-3 p-2">
-                                                            <div class="radio-wrapper-8 me-5">
+                                                            <div class="radio-wrapper-8 my-2 me-5">
                                                                 <label class="radio-wrapper-8" for="summer">
                                                                     <input id="summer" type="radio"
                                                                         name="season-for-dish">
                                                                     <span>Summer</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-sm-3 p-2">
-                                                            <div class="radio-wrapper-8 me-5">
+                                                            <div class="radio-wrapper-8 my-2 me-5">
                                                                 <label class="radio-wrapper-8" for="fall">
                                                                     <input id="fall" type="radio"
                                                                         name="season-for-dish">
                                                                     <span>Fall</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-sm-3 p-2">
-                                                            <div class="radio-wrapper-8 me-5">
+                                                            <div class="radio-wrapper-8 my-2 me-5">
                                                                 <label class="radio-wrapper-8" for="winter">
                                                                     <input id="winter" type="radio"
                                                                         name="season-for-dish">
                                                                     <span>Winter</span>
                                                                 </label>
                                                             </div>
-                                                        </div>
                                                     </div>
                                                     <h4 class="mt-4">Select Holiday</h4>
                                                     <div class="row">
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2 ">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Christmas-Eve"
                                                                     type="checkbox" />
@@ -249,7 +241,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2 ">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="4th-of-July"
                                                                     type="checkbox" />
@@ -262,7 +254,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Christmas" type="checkbox" />
                                                                 <label class="cbx" for="Christmas"><span>
@@ -274,7 +266,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Memorial-Day"
                                                                     type="checkbox" />
@@ -287,7 +279,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Ny-Eve" type="checkbox" />
                                                                 <label class="cbx" for="Ny-Eve"><span>
@@ -299,7 +291,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Labor-Day" type="checkbox" />
                                                                 <label class="cbx" for="Labor-Day"><span>
@@ -311,7 +303,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Easter" type="checkbox" />
                                                                 <label class="cbx" for="Easter"><span>
@@ -323,7 +315,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Super-Bowl-Sunday"
                                                                     type="checkbox" />
@@ -336,7 +328,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Thanksgiving"
                                                                     type="checkbox" />
@@ -349,7 +341,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="UFC-Events"
                                                                     type="checkbox" />
@@ -362,7 +354,7 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 p-2">
+                                                        <div class="col-sm-6 py-2">
                                                             <div class="checkbox-wrapper-46">
                                                                 <input class="inp-cbx" id="Mothers-day"
                                                                     type="checkbox" />
