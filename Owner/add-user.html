@@ -20,18 +20,17 @@
                         <a class="text-decoration-none" href="#"><img class="template-logo" src="../imgs/db-logo.png"
                                 alt="Logo"></a>
                     </div>
-
                     <div class="template-left-mid px-2 overflow-y-auto">
                         <ul class=" list-unstyled mb-0">
                             <li>
-                                <a class="teml-mid-links d-flex align-items-center active text-start w-100" href="#">
-                                    <div><img class="icon-image me-2" src="../imgs/dashboard-blue.png" alt="img"></div>
+                                <a class="teml-mid-links d-flex align-items-center text-start w-100" href="#">
+                                    <div><img class="icon-image me-2" src="../imgs/dashboard.png" alt="img"></div>
                                     <span>Dashboard</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
-                                    <div><img class="me-2 icon-image" src="../imgs/users.png" alt="img"></div>
+                                <a class="teml-mid-links d-flex align-items-center active w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/users-blue.png" alt="img"></div>
                                     <span>Users</span>
                                 </a>
                             </li>
@@ -80,7 +79,6 @@
 
                         </ul>
                     </div>
-
                     <div class="template-left-bottom">
                         <div class="d-flex justify-content-center px-4">
                             <a class="text-decoration-none text-white d-flex align-items-center justify-content-center fw-medium rounded-3 border border-2 border-blue py-3 w-100"
@@ -235,49 +233,266 @@
                                         </div>
                                     </div>
                                     <h5 class="mt-4">Select Member Role</h5>
-                                    <div class="d-flex">
-                                        <div class="radio-wrapper-8 me-5">
-                                            <label class="radio-wrapper-8" for="owner">
-                                                <input id="owner" type="radio" name="radio-examples">
-                                                <span>Restaurant Owner</span>
-                                            </label>
+                                    <div class="row">
+                                        <div class="col-md-4 p-2">
+                                            <div class="radio-wrapper-8 me-5">
+                                                <label class="radio-wrapper-8" for="owner">
+                                                    <input id="owner" type="radio" name="member-role">
+                                                    <span>Restaurant Owner</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div class="radio-wrapper-8 me-5">
-                                            <label class="radio-wrapper-8" for="head-chef">
-                                                <input id="head-chef" type="radio" name="radio-examples">
-                                                <span>Head Chef</span>
-                                            </label>
+                                        <div class="col-md-4 p-2">
+                                            <div class="radio-wrapper-8 me-5">
+                                                <label class="radio-wrapper-8" for="head-chef">
+                                                    <input id="head-chef" type="radio" name="member-role">
+                                                    <span>Head Chef</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div class="radio-wrapper-8 me-5">
-                                            <label class="radio-wrapper-8" for="kitchen">
-                                                <input id="kitchen" type="radio" name="radio-examples">
-                                                <span>Kitchen</span>
-                                            </label>
+                                        <div class="col-md-4 p-2">
+                                            <div class="radio-wrapper-8 me-5">
+                                                <label class="radio-wrapper-8" for="kitchen">
+                                                    <input id="kitchen" type="radio" name="member-role">
+                                                    <span>Kitchen</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="my-4 fw-semibold">Member Permissions</h3>
+                                    <div class="add-user-permissions overflow-x-auto">
+                                        <table class="table mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <h4 class="mb-0 fw-semibold">Permissions</h4>
+                                                    </th>
+                                                    <th><img class="icon-20px me-2" src="../imgs/view-details-blue.png"
+                                                            alt="img"><span>View</span></th>
+                                                    <th><img class="icon-20px me-2" src="../imgs/pen-blue.png"
+                                                            alt="img"><span>Edit</span></th>
+                                                    <th><img class="icon-20px me-2" src="../imgs/pen-blue.png"
+                                                            alt="img"><span>Create New</span></th>
+                                                    <th><img class="icon-20px me-2" src="../imgs/trash-blue.png"
+                                                            alt="img"><span>Delete</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">Financial analytics and performance metrics</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="financial-analytics-view" type="checkbox" />
+                                                            <label class="cbx" for="financial-analytics-view">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="financial-analytics-edit" type="checkbox" />
+                                                            <label class="cbx" for="financial-analytics-edit">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="financial-analytics-create" type="checkbox" />
+                                                            <label class="cbx" for="financial-analytics-create">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="financial-analytics-delete" type="checkbox" />
+                                                            <label class="cbx" for="financial-analytics-delete">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">Menu</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="menu-view" type="checkbox" />
+                                                            <label class="cbx" for="menu-view">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="menu-edit" type="checkbox" />
+                                                            <label class="cbx" for="menu-edit">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="menu-create" type="checkbox" />
+                                                            <label class="cbx" for="menu-create">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="menu-delete" type="checkbox" />
+                                                            <label class="cbx" for="menu-delete">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">Forms and instructional content to execute dishes</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="instructional-content-view" type="checkbox" />
+                                                            <label class="cbx" for="instructional-content-view">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="instructional-content-edit" type="checkbox" />
+                                                            <label class="cbx" for="instructional-content-edit">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="instructional-content-create" type="checkbox" />
+                                                            <label class="cbx" for="instructional-content-create">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-wrapper-45">
+                                                            <input id="instructional-content-delete" type="checkbox" />
+                                                            <label class="cbx" for="instructional-content-delete">
+                                                                <div class="flip">
+                                                                    <div class="front"></div>
+                                                                    <div class="back">
+                                                                        <svg width="16" height="14" viewBox="0 0 16 14">
+                                                                            <path d="M2 8.5L6 12.5L14 1.5"></path>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="my-5 row">
+                                        <div class="d-flex flex-column flex-sm-row col-12 col-sm-8">
+                                            <input class="btn-gray-regular my-2 me-2" type="button" value="cancel">
+                                            <input class="btn-main-blue my-2 me-2" type="submit" value="Save">
+                                        </div>
+                                        <div class="d-flex col-12 col-sm-4 justify-content-end">
+                                            <input class="btn-gray-regular my-2" type="reset" value="Clear">
                                         </div>
                                     </div>
                                 </form>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://kit.fontawesome.com/f9a70f49f9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -292,86 +507,9 @@
             let uploadedimgs = event.target.files[0];
             previewdimg.src = URL.createObjectURL(uploadedimgs)
         })
-
     </script>
 </body>
 
 </html>
 
 
-
-
-
-
-
-
-<style>
-    .add-user-form label.radio-wrapper-8 {
-        display: block;
-        cursor: pointer;
-    }
-
-    .add-user-form label.radio-wrapper-8 input {
-        display: none;
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-    }
-
-    .add-user-form label.radio-wrapper-8 input+span {
-        line-height: 22px;
-        height: 22px;
-        padding-left: 22px;
-        display: block;
-        position: relative;
-    }
-
-    .add-user-form label.radio-wrapper-8 input+span:not(:empty) {
-        padding-left: 30px;
-    }
-
-    .add-user-form label.radio-wrapper-8 input+span:before,
-    .add-user-form label.radio-wrapper-8 input+span:after {
-        content: "";
-        width: 22px;
-        height: 22px;
-        display: block;
-        border-radius: 50%;
-        left: 0;
-        top: 0;
-        position: absolute;
-    }
-
-    .add-user-form label.radio-wrapper-8 input+span:before {
-        background: #D1D7E3;
-        transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
-    }
-
-    .add-user-form label.radio-wrapper-8 input+span:after {
-        background: #fff;
-        transform: scale(0.78);
-        transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
-    }
-
-    .add-user-form label.radio-wrapper-8 input:checked+span:before {
-        transform: scale(1.04);
-        background: #5D9BFB;
-    }
-
-    .add-user-form label.radio-wrapper-8 input:checked+span:after {
-        transform: scale(0.4);
-        transition: transform 0.3s ease;
-    }
-
-    .add-user-form label.radio-wrapper-8:hover input+span:before {
-        transform: scale(0.92);
-    }
-
-    .add-user-form label.radio-wrapper-8:hover input+span:after {
-        transform: scale(0.74);
-    }
-
-    .add-user-form label.radio-wrapper-8:hover input:checked+span:after {
-        transform: scale(0.4);
-    }
-</style>

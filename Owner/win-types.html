@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,23 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/main1.css">
-    <title>Document</title>
+    <title>Win Types</title>
 </head>
+
 <body class="template-body">
     <section>
         <div class="template-main d-flex">
             <div class="template-left d-xl-block" id="template-left">
                 <div class="d-flex flex-column justify-content-between h-100 px-1 py-4">
                     <div class="template-left-top d-flex justify-content-center">
-                        <a class="text-decoration-none" href="#"><img class="template-logo" src="../imgs/db-logo.png" alt="Logo"></a>
+                        <a class="text-decoration-none" href="#"><img class="template-logo" src="../imgs/db-logo.png"
+                                alt="Logo"></a>
                     </div>
                     <div class="template-left-mid px-2 overflow-y-auto">
                         <ul class=" list-unstyled mb-0">
                             <li>
-                                <a class="teml-mid-links d-flex align-items-center active text-start w-100" href="#">
-                                    <div><img class="icon-image me-2" src="../imgs/dashboard-blue.png" alt="img"></div>
+                                <a class="teml-mid-links d-flex align-items-center text-start w-100" href="#">
+                                    <div><img class="icon-image me-2" src="../imgs/dashboard.png" alt="img"></div>
                                     <span>Dashboard</span>
                                 </a>
                             </li>
@@ -44,8 +47,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="#">
-                                    <div><img class="me-2 icon-image" src="../imgs/win-type.png" alt="img"></div>
+                                <a class="teml-mid-links d-flex align-items-center active w-100 text-start" href="#">
+                                    <div><img class="me-2 icon-image" src="../imgs/win-type-blue.png" alt="img"></div>
                                     <span>Win Types</span>
                                 </a>
                             </li>
@@ -96,7 +99,8 @@
                         <form action="">
                             <div class="d-flex align-items-center bg-white rounded px-2">
                                 <label for="search"><i class="fa-solid fa-magnifying-glass text-blue me-2"></i></label>
-                                <input id="search" class="w-100  border-0 bg-transparent focus-none  py-2" type="search" name="search" placeholder="Search">
+                                <input id="search" class="w-100  border-0 bg-transparent focus-none  py-2" type="search"
+                                    name="search" placeholder="Search">
                             </div>
                         </form>
                     </div>
@@ -128,9 +132,84 @@
                 </div>
                 <div class="tem-right-btm p-2 pt-4">
                     <div class="overflow-y-auto h-100">
-                        
                         <!-- code inside this div -->
-                        
+                        <div class="container-fluid h-100">
+                            <h2 class="fw-semibold">Dashboard</h2>
+                            <div class="bg-white px-3 py-2 rounded-4 my-shadow wine-filter-form">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-3 p-2">
+                                            <select class="form-select focus-none" name="Select-dish" id="Select-dish">
+                                                <option value="Select-dish" disabled selected class="d-none">Select Dish
+                                                </option>
+                                                <option value="Beef-Wellington">Beef Wellington</option>
+                                                <option value="Chicken-Foret">Chicken Foret</option>
+                                                <option value="Chicken-Francaise">Chicken Francaise</option>
+                                                <option value="Chicken-Milanese">Chicken Milanese</option>
+                                                <option value="Chicken-Parmesan">Chicken Parmesan</option>
+                                                <option value="Chicken-Foret">Chicken Foret</option>
+                                                <option value="Chicken-Foret">Chicken Foret</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 p-2">
+                                            <select class="form-select focus-none" name="Select-ingredient"
+                                                id="Select-ingredient">
+                                                <option value="Select-ingredient" disabled selected class="d-none">
+                                                    Select Ingredient</option>
+                                                <option value="Onion">Onion</option>
+                                                <option value="Tomatoes">Tomatoes</option>
+                                                <option value="Chicken">Chicken</option>
+                                                <option value="Garlic">Garlic</option>
+                                                <option value="Ginger">Ginger</option>
+                                                <option value="Olive Oil">Olive Oil</option>
+                                                <option value="Tofu">Tofu</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3 p-2">
+                                            <select class="form-select focus-none" name="Select-Wine-Type"
+                                                id="Select-Wine-Type">
+                                                <option value="Select-Wine-Type" disabled selected class="d-none">Select
+                                                    Wine Type</option>
+                                                <option value="Red-Wine">Red Wine</option>
+                                                <option value="White-Wine">White Wine</option>
+                                                <option value="Sparkling-Wine">Sparkling Wine</option>
+                                                <option value="Rose-Wine">Rose Wine</option>
+                                                <option value="Dessert-Wine">Dessert Wine</option>
+                                                <option value="Fortified-Wine">Fortified Wine</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="mt-4 p-3 rounded-4 my-shadow bg-white h-75">
+                                <div class="h-100 overflow-auto">
+                                    <div class="bg-custom-gray p-3 rounded-3">
+                                        <div class="row w-100">
+                                            <div class="col-lg-6 row align-items-center">
+                                                <div class="col-sm-6">
+                                                    <img class="dish-img rounded" src="../imgs/dish-img.jpg" alt="img">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <h4>Dish Info</h4>
+                                                    <h5>Chicken Foret</h5>
+                                                    <p class="text-12">Basil parmesan egg-battered chicken breast over
+                                                        basil and Parmesan cheese risotto, with a sherry butter finish.
+                                                    </p>
+                                                    <h4>Ingridients</h4>
+                                                    <ul>
+                                                        <li>oil</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,4 +223,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
+
 </html>

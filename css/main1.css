@@ -1,92 +1,102 @@
 /* Saim */
 
-.icon-20px{
-    width:20px;
+.icon-20px {
+    width: 20px;
     height: 20px;
     object-fit: contain;
 }
-.icon-15px{
-    width:15px;
+
+.icon-15px {
+    width: 15px;
     height: 15px;
     object-fit: contain;
 }
 
-.db-calender-bg{
+.db-calender-bg {
     background-color: rgba(153, 195, 255, 1);
 }
-.db-calender-input{
+
+.db-calender-input {
     max-width: fit-content;
 }
-.db-slides-icon{
+
+.db-slides-icon {
     width: 40px;
     height: 40px;
     object-fit: contain;
-    margin:0 8px;
+    margin: 0 8px;
 }
 
-.db-overview-table td{
+.db-overview-table td {
     padding: 4px;
 }
 
-.db-pie-chart{
+.db-pie-chart {
     width: 200px;
     height: 200px;
 }
 
-.db-table{
+.db-table {
     max-height: 350px;
 }
-.db-table table{
+
+.db-table table {
     border-collapse: separate;
-    border-spacing:0 5px;
+    border-spacing: 0 5px;
 }
-.db-table th{
+
+.db-table th {
     background-color: var(--dashboard-bg);
     text-wrap: nowrap;
     color: #fff;
     font-weight: normal;
     font-size: 14px
 }
-.db-table td{
-    padding:16px;
+
+.db-table td {
+    padding: 16px;
     text-wrap: nowrap;
     align-content: center;
     background-color: var(--bg-custom-gray);
     border-top: 1px solid rgba(231, 231, 231, 1);
     border-bottom: 1px solid rgba(231, 231, 231, 1);
 }
-.db-table tbody tr td:first-child{
+
+.db-table tbody tr td:first-child {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     border-left: 1px solid rgba(231, 231, 231, 1);
 }
 
-.db-table tbody tr td:last-child{
+.db-table tbody tr td:last-child {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-right: 1px solid rgba(231, 231, 231, 1);
 }
-.db-table thead tr th:first-child{
+
+.db-table thead tr th:first-child {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
-.db-table thead tr th:last-child{
+.db-table thead tr th:last-child {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
-.user-table-img{
+.user-table-img {
     width: 36px;
     height: 36px;
     border-radius: 50%;
     object-fit: cover;
 }
-.user-table .address{
+
+.user-table .address {
     min-width: 200px;
     text-wrap: wrap;
 }
-.user-table  th{
+
+.user-table th {
     background-color: var(--dashboard-bg);
     text-wrap: nowrap;
     color: #fff;
@@ -94,71 +104,82 @@
     font-size: 14px;
     padding: 18px;
 }
-.user-table table{
+
+.user-table table {
     border-collapse: separate;
-    border-spacing:0 5px;
+    border-spacing: 0 5px;
 }
-.user-table td{
-    padding:16px;
+
+.user-table td {
+    padding: 16px;
     text-wrap: nowrap;
     align-content: center;
     background-color: var(--bg-custom-gray);
     border-top: 1px solid rgba(231, 231, 231, 1);
     border-bottom: 1px solid rgba(231, 231, 231, 1);
 }
-.user-table tbody tr td:first-child{
+
+.user-table tbody tr td:first-child {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     border-left: 1px solid rgba(231, 231, 231, 1);
 }
 
-.user-table tbody tr td:last-child{
+.user-table tbody tr td:last-child {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-right: 1px solid rgba(231, 231, 231, 1);
 }
-.user-table thead tr th:first-child{
+
+.user-table thead tr th:first-child {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
-.user-table thead tr th:last-child{
+.user-table thead tr th:last-child {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.profile-detail .pd-image{
+
+.profile-detail .pd-image {
     width: 100px;
     height: 100px;
 }
 
-.user-info-tables{
+.user-info-tables {
     max-width: 450px;
 }
-.uap-table{
+
+.uap-table {
     text-wrap: nowrap;
 }
-.uap-table td{
+
+.uap-table td {
     text-align: center;
     align-content: center;
 }
-.uap-table th{
+
+.uap-table th {
     align-content: center;
     color: var(--custom-secondary);
     font-weight: 500;
 }
-.uap-table tbody tr td:first-child>p{
+
+.uap-table tbody tr td:first-child>p {
     text-align: start;
     text-wrap: wrap;
     width: 200px;
 }
-.image-circle-preview{
+
+.image-circle-preview {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 1px solid var(--custom-secondary);
     background-color: #fff;
 }
-.image-circle-preview img{
+
+.image-circle-preview img {
     width: 100%;
     height: 100%;
     border-radius: inherit;
@@ -166,10 +187,390 @@
 }
 
 
+/* ------------------------------Add user radio ----------------------------- */
+
+label.radio-wrapper-8 {
+    display: block;
+    cursor: pointer;
+}
+
+label.radio-wrapper-8 input {
+    display: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+label.radio-wrapper-8 input+span {
+    line-height: 22px;
+    height: 22px;
+    padding-left: 22px;
+    display: block;
+    position: relative;
+}
+
+label.radio-wrapper-8 input+span:not(:empty) {
+    padding-left: 30px;
+}
+
+label.radio-wrapper-8 input+span:before,
+label.radio-wrapper-8 input+span:after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+label.radio-wrapper-8 input+span:before {
+    background: #D1D7E3;
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+
+label.radio-wrapper-8 input+span:after {
+    background: #fff;
+    transform: scale(0.78);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+
+label.radio-wrapper-8 input:checked+span:before {
+    transform: scale(1.04);
+    background: var(--dashboard-bg);
+}
+
+label.radio-wrapper-8 input:checked+span:after {
+    transform: scale(0.4);
+    transition: transform 0.3s ease;
+}
+
+label.radio-wrapper-8:hover input+span:before {
+    transform: scale(0.92);
+}
+
+label.radio-wrapper-8:hover input+span:after {
+    transform: scale(0.74);
+}
+
+label.radio-wrapper-8:hover input:checked+span:after {
+    transform: scale(0.4);
+}
+
+/* ------------------------------Add user radio ----------------------------- */
+
+/* ------------------------------Add user checkbox ----------------------------- */
+
+.checkbox-wrapper-45 {
+    position: relative;
+}
+
+.checkbox-wrapper-45 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox-wrapper-45 .cbx {
+    -webkit-perspective: 20;
+    perspective: 20;
+    display: inline-block;
+    border: 2px solid var(--dashboard-bg);
+    background: #e8e8eb;
+    border-radius: 4px;
+    transform: translate3d(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkbox-wrapper-45 .cbx:hover {
+    border-color: var(--dashboard-bg);
+}
+
+.checkbox-wrapper-45 .flip {
+    display: block;
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-wrapper-45 input[type="checkbox"]:checked+.cbx {
+    border-color: var(--dashboard-bg);
+}
+
+.checkbox-wrapper-45 input[type="checkbox"]:checked+.cbx .flip {
+    transform: rotateY(180deg);
+}
+
+.checkbox-wrapper-45 .front,
+.checkbox-wrapper-45 .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+}
+
+.checkbox-wrapper-45 .front {
+    background: #fff;
+    z-index: 1;
+}
+
+.checkbox-wrapper-45 .back {
+    transform: rotateY(180deg);
+    background: var(--dashboard-bg);
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    box-shadow: 0 0 0 1px var(--dashboard-bg);
+}
+
+.checkbox-wrapper-45 .back svg {
+    margin-top: 3px;
+    fill: none;
+}
+
+.checkbox-wrapper-45 .back svg path {
+    stroke: #fff;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ------------------------------Add user checkbox ----------------------------- */
+.add-user-permissions {
+    border-radius: 8px;
+}
+
+.add-user-permissions table {
+    text-wrap: nowrap;
+}
+
+.add-user-permissions th {
+    align-content: center;
+    color: var(--dashboard-bg);
+}
+
+.add-user-permissions td {
+    align-content: center;
+}
+
+.add-user-permissions td:first-child>p {
+    width: 300px;
+    text-wrap: wrap;
+}
+
+.add-user-permissions th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.add-user-permissions th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.add-user-permissions tbody tr:last-child td {
+    border: none;
+}
+
+.add-user-permissions tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+.add-user-permissions tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+.add-user-form .btn-main-blue,
+.add-user-form .btn-gray-regular {
+    width: 150px;
+}
+
+.add-user-form .form-control {
+    padding: 10px;
+}
+
+.srm-tabs .nav-tabs .nav-link {
+    border: none;
+    color: var(--custom-secondary);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.srm-tabs .nav-tabs .nav-link.active {
+    color: var(--dashboard-bg);
+    background-color: transparent;
+    border-bottom: 3px solid var(--dashboard-bg);
+}
+ /* ---------------------------select holiday checkbox -------------------------- */
+
+ .checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098A9;
+    transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--dashboard-bg);
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+}
+
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: var(--dashboard-bg);
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child {
+    background: var(--dashboard-bg);
+    border-color: var(--dashboard-bg);
+    animation: wave-46 0.4s ease;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+
+
+
+ /* ---------------------------select holiday checkbox -------------------------- */
+
+
+ .task-automation-table th {
+    background-color: var(--dashboard-bg);
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 18px;
+}
+
+.task-automation-table table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.task-automation-table td {
+    padding: 16px;
+    align-content: center;
+    background-color: var(--bg-custom-gray);
+    border-top: 1px solid rgba(231, 231, 231, 1);
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+}
+
+.task-automation-table tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid rgba(231, 231, 231, 1);
+}
+
+.task-automation-table tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid rgba(231, 231, 231, 1);
+}
+
+.task-automation-table tbody tr td:nth-child(2) p{
+    width: 300px;
+    text-wrap: wrap;
+}
+
+.task-automation-table thead tr th:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.task-automation-table thead tr th:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.wine-filter-form .form-select{
+    background-image: url(../imgs/select-bg-white.png);
+    background-size: 12px 8px;
+    background-color: var(--bd-active-link);
+    padding: 12px;
+    color: #fff;
+}
+.wine-filter-form option{
+    background-color: #fff;
+    color: #000;
+}
+
+.dish-img{
+    width: 100%;
+    max-width: 250px;
+}
+
+
+
+
+@keyframes wave-46 {
+    50% {
+        transform: scale(0.9);
+    }
+}
 
 @media screen and (max-width:992px) {
-    .border-slg-0{
+    .border-slg-0 {
         border: none !important;
     }
-    
+
+}
+
+@media screen and (max-width:576px) {
+
+    .add-user-form .btn-main-blue,
+    .add-user-form .btn-gray-regular {
+        width: 100%;
+    }
 }

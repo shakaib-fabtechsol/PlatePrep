@@ -140,13 +140,23 @@ body {
 .text-red{
     color: var(--bg-red-btn);
 }
-
+.text-12{
+    font-size: 12px;
+}
 .border-blue {
     border-color: var(--bd-active-link) !important;
 }
 .btn-main-blue{
     background-color: var(--dashboard-bg);
     color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+}
+.btn-gray-regular{
+    background-color: var(--bg-custom-gray);
+    color: var(--dashboard-bg);
+    border: 1px solid var(--dashboard-bg);
     text-decoration: none;
     padding: 12px;
     border-radius: 8px;
