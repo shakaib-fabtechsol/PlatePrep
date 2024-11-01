@@ -405,9 +405,10 @@ label.radio-wrapper-8:hover input:checked+span:after {
     background-color: transparent;
     border-bottom: 3px solid var(--dashboard-bg);
 }
- /* ---------------------------select holiday checkbox -------------------------- */
 
- .checkbox-wrapper-46 input[type="checkbox"] {
+/* ---------------------------select holiday checkbox -------------------------- */
+
+.checkbox-wrapper-46 input[type="checkbox"] {
     display: none;
     visibility: hidden;
 }
@@ -483,10 +484,10 @@ label.radio-wrapper-8:hover input:checked+span:after {
 
 
 
- /* ---------------------------select holiday checkbox -------------------------- */
+/* ---------------------------select holiday checkbox -------------------------- */
 
 
- .task-automation-table th {
+.task-automation-table th {
     background-color: var(--dashboard-bg);
     color: #fff;
     font-weight: normal;
@@ -519,7 +520,7 @@ label.radio-wrapper-8:hover input:checked+span:after {
     border-right: 1px solid rgba(231, 231, 231, 1);
 }
 
-.task-automation-table tbody tr td:nth-child(2) p{
+.task-automation-table tbody tr td:nth-child(2) p {
     width: 300px;
     text-wrap: wrap;
 }
@@ -534,37 +535,138 @@ label.radio-wrapper-8:hover input:checked+span:after {
     border-bottom-right-radius: 8px;
 }
 
-.wine-filter-form .form-select{
+.wine-filter-form .form-select {
     background-image: url(../imgs/select-bg-white.png);
     background-size: 12px 8px;
     background-color: var(--bd-active-link);
     padding: 12px;
     color: #fff;
 }
-.wine-filter-form option{
+
+.wine-filter-form option {
     background-color: #fff;
     color: #000;
 }
 
-.dish-img{
+.dish-img {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
 }
 
-.ai-sugg-wine td{
+.ai-sugg-wine td {
     background: transparent;
     text-wrap: nowrap;
     padding: 0 4px 4px 0;
-    
+
 }
-.ai-sugg-wine tr td:first-child{
+
+.ai-sugg-wine tr td:first-child {
     font-weight: 600;
 }
-.ai-sugg-wine tr td:last-child p{
+
+.ai-sugg-wine tr td:last-child p {
     text-wrap: wrap;
     padding: inherit;
     max-width: 250px;
+}
+
+
+.Accesslog-table th {
+    background-color: var(--dashboard-bg);
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 18px;
+}
+
+.Accesslog-table table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.Accesslog-table td {
+    padding: 16px;
+    align-content: center;
+    background-color: var(--bg-custom-gray);
+    border-top: 1px solid rgba(231, 231, 231, 1);
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+}
+
+.Accesslog-table tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid rgba(231, 231, 231, 1);
+}
+
+.Accesslog-table tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid rgba(231, 231, 231, 1);
+}
+
+.Accesslog-table tbody tr td:nth-child(2) p {
+    width: 300px;
+    text-wrap: wrap;
+}
+
+.Accesslog-table thead tr th:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.Accesslog-table thead tr th:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.RecipeAudit-table th {
+    background-color: var(--dashboard-bg);
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 18px;
+}
+
+.RecipeAudit-table table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.RecipeAudit-table td {
+    padding: 16px;
+    align-content: center;
+    background-color: var(--bg-custom-gray);
+    border-top: 1px solid rgba(231, 231, 231, 1);
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+}
+
+.RecipeAudit-table tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid rgba(231, 231, 231, 1);
+}
+
+.RecipeAudit-table tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid rgba(231, 231, 231, 1);
+}
+
+.RecipeAudit-table tbody tr td:nth-child(2) p,
+.RecipeAudit-table tbody tr td:nth-child(6) p {
+    width: 300px;
+    text-wrap: wrap;
+}
+
+.RecipeAudit-table thead tr th:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.RecipeAudit-table thead tr th:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 
@@ -583,6 +685,12 @@ label.radio-wrapper-8:hover input:checked+span:after {
 
 }
 
+@media screen and (max-width:768px) {
+    .w-lmd-100 {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width:576px) {
 
     .add-user-form .btn-main-blue,
@@ -593,8 +701,8 @@ label.radio-wrapper-8:hover input:checked+span:after {
 
 }
 
-@media screen and (max-width:480px){
-    .ai-sugg-wine td{
+@media screen and (max-width:480px) {
+    .ai-sugg-wine td {
         display: inline;
     }
 }
