@@ -5,7 +5,16 @@
     height: 20px;
     object-fit: contain;
 }
-
+.icon-35px{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+.img-50px{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
 .icon-15px {
     width: 15px;
     height: 15px;
@@ -83,7 +92,7 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.user-table{
+.user-table, .task-detail-page{
     height: calc(100% - 70px);
 }
 .user-table-img {
@@ -484,6 +493,11 @@ label.radio-wrapper-8:hover input:checked+span:after {
     stroke-dashoffset: 0;
 }
 
+@keyframes wave-46 {
+    50% {
+        transform: scale(0.9);
+    }
+}
 
 
 /* ---------------------------select holiday checkbox -------------------------- */
@@ -670,15 +684,37 @@ label.radio-wrapper-8:hover input:checked+span:after {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-
-
-
-
-@keyframes wave-46 {
-    50% {
-        transform: scale(0.9);
-    }
+.task-update-content{
+    display: none;
 }
+.task-update-content li{
+    border-radius: 5px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+.task-update-content li:hover{
+    color: #fff;
+    background-color: var(--dashboard-bg);
+}
+.task-status-tables td{
+    align-content: center;
+    
+}
+
+.task-status-tables tr td:first-child{
+    text-wrap: nowrap;
+}
+
+.task-discription-box{
+    height: 400px;
+}
+.task-discription-box p:last-child{
+    margin-bottom: 0;
+}
+
+
+
+
 
 @media screen and (max-width:992px) {
     .border-slg-0 {
@@ -691,6 +727,7 @@ label.radio-wrapper-8:hover input:checked+span:after {
     .w-lmd-100 {
         width: 100%;
     }
+    
 }
 
 @media screen and (max-width:576px) {
@@ -699,12 +736,23 @@ label.radio-wrapper-8:hover input:checked+span:after {
     .add-user-form .btn-gray-regular {
         width: 100%;
     }
-
+    .text-lsm-14{
+        font-size: 14px !important;
+    }
+    .text-lsm-16{
+        font-size: 16px !important;
+    }
 
 }
 
 @media screen and (max-width:480px) {
-    .ai-sugg-wine td {
+    .ai-sugg-wine td,.task-status-tables td {
         display: inline;
+    }
+    .task-status-tables tr td>*{
+        justify-content: center;
+    }
+    .d-xsm-none{
+        display:none !important;
     }
 }
