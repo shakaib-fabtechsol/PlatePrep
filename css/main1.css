@@ -83,7 +83,9 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-
+.user-table{
+    height: calc(100% - 70px);
+}
 .user-table-img {
     width: 36px;
     height: 36px;
