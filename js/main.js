@@ -1,12 +1,12 @@
 function displayToggle() {
     var x = document.getElementById('template-left');
-    if (x.style.display === 'none') {
+    if (x.style.display === 'none' || x.style.display === '') {
         x.style.display = 'block';
-    }
-    else {
+    } else {
         x.style.display = 'none';
     }
 }
+
 const ctx = document.getElementById('db-task-overview');
 
 new Chart(ctx, {

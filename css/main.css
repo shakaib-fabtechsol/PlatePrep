@@ -137,6 +137,12 @@ body {
 .text-dark-blue{
     color: var(--dashboard-bg);
 }
+.bg-sky{
+    background-color: #04AEEF;
+}
+.text-sky{
+    color: #04AEEF;
+}
 .text-red{
     color: var(--bg-red-btn);
 }
