@@ -418,10 +418,12 @@ label.radio-wrapper-8:hover input:checked+span:after {
 
 .template-body .form-control{
     padding: 10px;
+    background-color: #F8F8F8 !important;
 }
 .template-body .form-select{
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #F8F8F8 !important;
 }
 .srm-tabs .nav-tabs .nav-link {
     border: none;
@@ -573,7 +575,7 @@ label.radio-wrapper-8:hover input:checked+span:after {
 .wine-filter-form .form-select {
     background-image: url(../imgs/select-bg-white.png);
     background-size: 12px 8px;
-    background-color: var(--bd-active-link);
+    background-color: var(--bd-active-link) !important;
     padding: 12px;
     color: #fff;
 }
