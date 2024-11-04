@@ -1,5 +1,5 @@
 /* Saim */
-.form-control:focus {
+.template-body .form-control:focus,.template-body .form-select:focus {
     border-color: #dee2e6;
 }
 
@@ -416,10 +416,13 @@ label.radio-wrapper-8:hover input:checked+span:after {
     width: 150px;
 }
 
-.add-user-form .form-control .form-select {
+.template-body .form-control{
     padding: 10px;
 }
-
+.template-body .form-select{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .srm-tabs .nav-tabs .nav-link {
     border: none;
     color: var(--custom-secondary);
@@ -921,6 +924,11 @@ label.radio-wrapper-8:hover input:checked+span:after {
 
 /* --------------------------------Staff permission chechbox------------------------------------------------ */
 
+.menu-template-image{
+    max-height: 500px;
+    border: 16px solid rgba(253, 179, 108, 1);
+    border-radius: inherit;
+}
 
 @media screen and (max-width:992px) {
     .border-slg-0 {
