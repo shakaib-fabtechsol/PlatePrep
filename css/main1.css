@@ -866,6 +866,62 @@ label.radio-wrapper-8:hover input:checked+span:after {
     resize: none;
 }
 
+/* --------------------------------Staff permission chechbox------------------------------------------------ */
+
+.checkbox-wrapper-22 .switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 65px;
+}
+
+.checkbox-wrapper-22 .switch input {
+    display: none;
+}
+
+.checkbox-wrapper-22 .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.checkbox-wrapper-22 .slider:before {
+    background-image: url(../imgs/circle-blue.png);
+    background-size: cover;
+    bottom: 0px;
+    content: "";
+    height: 34px;
+    left: 0px;
+    position: absolute;
+    transition: .4s;
+    width: 34px;
+}
+
+.checkbox-wrapper-22 input:checked+.slider {
+    background-color: rgba(195, 200, 255,1);
+}
+
+.checkbox-wrapper-22 input:checked+.slider:before {
+    background-image: url(../imgs/check-circle-blue.png);
+    transform: translateX(31px);
+}
+
+.checkbox-wrapper-22 .slider.round {
+    border-radius: 34px;
+}
+
+.checkbox-wrapper-22 .slider.round:before {
+    border-radius: 50%;
+}
+
+/* --------------------------------Staff permission chechbox------------------------------------------------ */
+
+
 @media screen and (max-width:992px) {
     .border-slg-0 {
         border: none !important;
@@ -874,6 +930,7 @@ label.radio-wrapper-8:hover input:checked+span:after {
     .w-llg-100 {
         width: 100%;
     }
+   
 
 }
 
@@ -881,7 +938,15 @@ label.radio-wrapper-8:hover input:checked+span:after {
     .w-lmd-100 {
         width: 100%;
     }
-
+    .flex-smd-wrap{
+        flex-wrap: wrap;
+    }
+    .text-smd-16{
+        font-size: 16px !important;
+    }
+    .list-lmd-unstyled{
+        list-style-type: none;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -890,6 +955,7 @@ label.radio-wrapper-8:hover input:checked+span:after {
     .add-user-form .btn-gray-regular {
         width: 100%;
     }
+    
 
     .text-lsm-14 {
         font-size: 14px !important;
@@ -903,6 +969,21 @@ label.radio-wrapper-8:hover input:checked+span:after {
         width: 100%;
     }
 
+    .border-ssm-0 {
+        border: none !important;
+    }
+
+    .insert-comment-items {
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        left: 0%;
+        background-color: #fff;
+        box-shadow: 0px 0px 20px 0px rgba(154, 154, 154, 0.2);
+        border-radius: 8px;
+        padding: 12px;
+    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -911,6 +992,7 @@ label.radio-wrapper-8:hover input:checked+span:after {
     .task-status-tables td {
         display: inline;
     }
+
 
     .task-status-tables tr td>* {
         justify-content: center;

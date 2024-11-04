@@ -326,11 +326,15 @@
                                             </div>
                                         </div>
                                         <div class="my-4 col-md-10 col-lg-8 small">
-                                            <p>Hey, <span class="text-primary">@Dear Admin</span> wanted to discuss the upcoming Employee Statistics page design!</p>
-                                            <p>I think it's crucial for us to have a clear vision of what to achieve with this platform. Any initial thoughts?</p>                                            
+                                            <p>Hey, <span class="text-primary">@Dear Admin</span> wanted to discuss the
+                                                upcoming Employee Statistics page design!</p>
+                                            <p>I think it's crucial for us to have a clear vision of what to achieve
+                                                with this platform. Any initial thoughts?</p>
                                         </div>
                                         <div class="position-absolute top-100 start-50 translate-middle">
-                                            <p class="mb-0 bg-white text-primary small py-1 px-3 border rounded-pill text-nowrap">New Messages</p>
+                                            <p
+                                                class="mb-0 bg-white text-primary small py-1 px-3 border rounded-pill text-nowrap">
+                                                New Messages</p>
                                         </div>
                                     </div>
                                     <div class="position-relative mb-4 border-bottom">
@@ -359,10 +363,13 @@
                                             </div>
                                         </div>
                                         <div class="my-4 col-md-10 col-lg-8 small">
-                                            <p>Absolutely, <span class="text-primary">@Yaseen</span> I think the design should prioritize simplicity and accessibility.</p>
+                                            <p>Absolutely, <span class="text-primary">@Yaseen</span> I think the design
+                                                should prioritize simplicity and accessibility.</p>
                                         </div>
                                         <div class="position-absolute top-100 start-50 translate-middle">
-                                            <p class="mb-0 bg-white text-primary small py-1 px-3 border rounded-pill text-nowrap">New Messages</p>
+                                            <p
+                                                class="mb-0 bg-white text-primary small py-1 px-3 border rounded-pill text-nowrap">
+                                                New Messages</p>
                                         </div>
                                     </div>
                                 </div>
@@ -373,16 +380,21 @@
                                                 src="../imgs/template-profile-img.png" alt="">
                                         </div>
                                         <div class="w-100 bg-white my-shadow d-flex align-items-center rounded">
-                                            <div class="p-3 d-none d-sm-block">
-                                                <div class="border-end d-flex align-items-center">
-                                                    <a class="text-decration-none text-primary border-end m-2 mx-0"
-                                                        href="#"><i class="fa-solid fa-microphone me-2"></i></a>
-                                                    <a class="text-decration-none text-primary m-2" href="#"><i
-                                                            class="fa-regular fa-face-smile"></i></a>
-                                                    <input class="d-none" type="file" name="comment-file"
-                                                        id="comment-file">
-                                                    <label class="text-primary m-2 pointer" for="comment-file"><i
-                                                            class="fa-solid fa-paperclip"></i></label>
+                                            <div class="p-3 pe-2 position-relative">
+                                                <div class="insert-comment-items d-sm-block" id="insert-comment-items">
+                                                    <div class="border-end border-ssm-0 d-flex flex-column flex-sm-row align-items-center">
+                                                        <a class="text-decration-none text-primary border-end border-ssm-0 m-2 mx-0"
+                                                            href="#"><i class="fa-solid fa-microphone me-sm-2"></i></a>
+                                                        <a class="text-decration-none text-primary m-2" href="#"><i
+                                                                class="fa-regular fa-face-smile"></i></a>
+                                                        <input class="d-none" type="file" name="comment-file"
+                                                            id="comment-file">
+                                                        <label class="text-primary m-2 pointer" for="comment-file"><i
+                                                                class="fa-solid fa-paperclip"></i></label>
+                                                    </div>
+                                                </div>
+                                                <div class="d-sm-none pointer" onclick="toggleCommentItem()">
+                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
                                                 </div>
                                             </div>
                                             <div class="m-2 w-100">
@@ -417,6 +429,15 @@
     <script>
         function taskContentToggle() {
             var x = document.getElementById('task-update-content');
+            if (x.style.display === 'none' || x.style.display === '') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+
+        function toggleCommentItem() {
+            var x = document.getElementById('insert-comment-items');
             if (x.style.display === 'none' || x.style.display === '') {
                 x.style.display = 'block';
             } else {
