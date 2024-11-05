@@ -8,7 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/main1.css">
-    <title>Users</title>
+    <title>Tasks</title>
 </head>
 
 <body class="template-body">
@@ -29,8 +29,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="teml-mid-links d-flex align-items-center active w-100 text-start" href="users.html">
-                                    <div><img class="me-2 icon-image" src="../imgs/users-blue.png" alt="img"></div>
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="users.html">
+                                    <div><img class="me-2 icon-image" src="../imgs/users.png" alt="img"></div>
                                     <span>Users</span>
                                 </a>
                             </li>
@@ -59,8 +59,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="tasks.html">
-                                    <div><img class="me-2 icon-image" src="../imgs/tasks.png" alt="img"></div>
+                                <a class="teml-mid-links d-flex align-items-center active w-100 text-start" href="tasks.html">
+                                    <div><img class="me-2 icon-image" src="../imgs/tasks-blue.png" alt="img"></div>
                                     <span>Tasks</span>
                                 </a>
                             </li>
@@ -134,28 +134,27 @@
                     <div class="tem-right-btm p-2 pt-4">
                         <div class="d-flex my-3 justify-content-between align-items-center">
                             <div>
-                                <h2 class="fw-semibold mb-0">All User</h2>
+                                <h2 class="fw-semibold mb-0">Tasks</h2>
                             </div>
                             <div>
-                                <a class="btn-main-blue px-4" href="add-user.html">Add User</a>
+                                <a class="btn-main-blue px-4" href="add-task.html">Add Task</a>
                             </div>
                         </div>
                         <div class="user-table bg-white overflow-auto rounded-4 my-shadow p-2">
                             <table class="table mb-0">
                                 <thead>
                                     <tr>
-                                        <th>User ID</th>
-                                        <th>User Name</th>
+                                        <th>Staff Name</th>
                                         <th>Email</th>
-                                        <th>Address</th>
-                                        <th>Users Role</th>
+                                        <th>Task Name</th>
+                                        <th>Task Description</th>
                                         <th>Status</th>
+                                        <th>Priority Level</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1.</td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg"
@@ -164,21 +163,22 @@
                                             </div>
                                         </td>
                                         <td>john.doe@example.com</td>
+                                        <td>Chicken Parmesan</td>
                                         <td>
-                                            <p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p>
+                                            <p class="mb-0 address">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head
-                                                Chef</p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-green-btn">
+                                                Completed</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-green-btn text-center p-2 fw-medium rounded-pill">Active
-                                            </p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-green-btn">Low</p>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <a class="mx-2 text-decoration-none text-dark-blue"
-                                                    href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    href="task-detail.html"><i class="fa-solid fa-eye"></i></a>
                                                 <a class="mx-2 text-decoration-none text-blue" href="#"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a class="mx-2 text-decoration-none text-red" href="#"><i
@@ -187,7 +187,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>1.</td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg"
@@ -196,21 +195,23 @@
                                             </div>
                                         </td>
                                         <td>john.doe@example.com</td>
+                                        <td>Chicken Parmesan</td>
                                         <td>
-                                            <p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p>
+                                            <p class="mb-0 address">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Staff
-                                            </p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-light-blue">
+                                                In-progress</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-red-btn text-center p-2 fw-medium rounded-pill">Inactive
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-light-blue">Medium
                                             </p>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <a class="mx-2 text-decoration-none text-dark-blue"
-                                                    href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    href="task-detail.html"><i class="fa-solid fa-eye"></i></a>
                                                 <a class="mx-2 text-decoration-none text-blue" href="#"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a class="mx-2 text-decoration-none text-red" href="#"><i
@@ -219,7 +220,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>1.</td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg"
@@ -228,21 +228,22 @@
                                             </div>
                                         </td>
                                         <td>john.doe@example.com</td>
+                                        <td>Chicken Parmesan</td>
                                         <td>
-                                            <p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p>
+                                            <p class="mb-0 address">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head
-                                                Chef</p>
-                                        </td>
-                                        <td>
-                                            <p class="mb-0 bg-red-btn text-center p-2 fw-medium rounded-pill">Inactive
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-red-btn">Overdue
                                             </p>
+                                        </td>
+                                        <td>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-red-btn">High</p>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <a class="mx-2 text-decoration-none text-dark-blue"
-                                                    href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    href="task-detail.html"><i class="fa-solid fa-eye"></i></a>
                                                 <a class="mx-2 text-decoration-none text-blue" href="#"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a class="mx-2 text-decoration-none text-red" href="#"><i
@@ -251,7 +252,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>1.</td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg"
@@ -260,21 +260,22 @@
                                             </div>
                                         </td>
                                         <td>john.doe@example.com</td>
+                                        <td>Chicken Parmesan</td>
                                         <td>
-                                            <p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p>
+                                            <p class="mb-0 address">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Staff
-                                            </p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-green-btn">
+                                                Completed</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-green-btn text-center p-2 fw-medium rounded-pill">Active
-                                            </p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill  bg-green-btn">Low</p>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <a class="mx-2 text-decoration-none text-dark-blue"
-                                                    href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    href="task-detail.html"><i class="fa-solid fa-eye"></i></a>
                                                 <a class="mx-2 text-decoration-none text-blue" href="#"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a class="mx-2 text-decoration-none text-red" href="#"><i
@@ -283,7 +284,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>1.</td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg"
@@ -292,21 +292,22 @@
                                             </div>
                                         </td>
                                         <td>john.doe@example.com</td>
+                                        <td>Chicken Parmesan</td>
                                         <td>
-                                            <p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p>
+                                            <p class="mb-0 address">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head
-                                                Chef</p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-green-btn">
+                                                Completed</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-red-btn text-center p-2 fw-medium rounded-pill">Inactive
-                                            </p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-green-btn">Low</p>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <a class="mx-2 text-decoration-none text-dark-blue"
-                                                    href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    href="task-detail.html"><i class="fa-solid fa-eye"></i></a>
                                                 <a class="mx-2 text-decoration-none text-blue" href="#"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a class="mx-2 text-decoration-none text-red" href="#"><i
@@ -315,7 +316,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>1.</td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg"
@@ -324,21 +324,23 @@
                                             </div>
                                         </td>
                                         <td>john.doe@example.com</td>
+                                        <td>Chicken Parmesan</td>
                                         <td>
-                                            <p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p>
+                                            <p class="mb-0 address">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head
-                                                Chef</p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-light-blue">
+                                                In-progress</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-green-btn text-center p-2 fw-medium rounded-pill">Active
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-light-blue">Medium
                                             </p>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <a class="mx-2 text-decoration-none text-dark-blue"
-                                                    href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    href="task-detail.html"><i class="fa-solid fa-eye"></i></a>
                                                 <a class="mx-2 text-decoration-none text-blue" href="#"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a class="mx-2 text-decoration-none text-red" href="#"><i
@@ -347,7 +349,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>1.</td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg"
@@ -356,21 +357,22 @@
                                             </div>
                                         </td>
                                         <td>john.doe@example.com</td>
+                                        <td>Chicken Parmesan</td>
                                         <td>
-                                            <p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p>
+                                            <p class="mb-0 address">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Head
-                                                Chef</p>
-                                        </td>
-                                        <td>
-                                            <p class="mb-0 bg-green-btn text-center p-2 fw-medium rounded-pill">Active
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-red-btn">Overdue
                                             </p>
+                                        </td>
+                                        <td>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-red-btn">High</p>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <a class="mx-2 text-decoration-none text-dark-blue"
-                                                    href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    href="task-detail.html"><i class="fa-solid fa-eye"></i></a>
                                                 <a class="mx-2 text-decoration-none text-blue" href="#"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a class="mx-2 text-decoration-none text-red" href="#"><i
@@ -379,7 +381,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>1.</td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <img class="user-table-img me-2" src="../imgs/user-table-profile.jpg"
@@ -388,21 +389,22 @@
                                             </div>
                                         </td>
                                         <td>john.doe@example.com</td>
+                                        <td>Chicken Parmesan</td>
                                         <td>
-                                            <p class="mb-0 address">456 Oak St, Apt 5 Springfield, IL 62704 USA</p>
+                                            <p class="mb-0 address">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-light-blue text-center p-2 fw-medium rounded-pill">Manager
-                                            </p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill bg-green-btn">
+                                                Completed</p>
                                         </td>
                                         <td>
-                                            <p class="mb-0 bg-red-btn text-center p-2 fw-medium rounded-pill">Inactive
-                                            </p>
+                                            <p class="mb-0 text-center p-2 fw-medium rounded-pill  bg-green-btn">Low</p>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <a class="mx-2 text-decoration-none text-dark-blue"
-                                                    href="profile-details.html"><i class="fa-solid fa-eye"></i></a>
+                                                    href="task-detail.html"><i class="fa-solid fa-eye"></i></a>
                                                 <a class="mx-2 text-decoration-none text-blue" href="#"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a class="mx-2 text-decoration-none text-red" href="#"><i
