@@ -975,7 +975,16 @@ label.radio-wrapper-8:hover input:checked+span:after {
 }
 
 /* --------------------------------AI menu range------------------------------------------------ */
-
+.signup-page{
+    height:100dvh;
+}
+.signup-box{
+    width: 100%;
+    max-width: 1000px;
+}
+.login-logo{
+    max-width: 350px;
+}
 
 @media screen and (max-width:992px) {
     .border-slg-0 {
@@ -1001,7 +1010,9 @@ label.radio-wrapper-8:hover input:checked+span:after {
     .text-smd-16 {
         font-size: 16px !important;
     }
-
+    .signup-box{
+        height: 100%;
+    }
     .list-lmd-unstyled {
         list-style-type: none;
     }
