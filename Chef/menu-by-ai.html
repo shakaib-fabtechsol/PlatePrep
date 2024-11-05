@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/main1.css">
     <link rel="stylesheet" href="../css/main2.css">
-    <title>Document</title>
+    <title>AI generated menu</title>
 </head>
 
 <body class="template-body">
@@ -107,27 +107,85 @@
                     </div>
                 </div>
                 <div class="tem-right-btm p-2 pt-4">
-                    <div class="overflow-y-auto h-100 ">
-                        <div class="container-fluid">
-                            <div class="row bg-white rounded-5 px-1 py-3">
-                                <div class="col-3">
-                                    <div class="d-flex flex-column p-3 h-100 my-border">
-                                        <div>
-                                            <img src="../imgs/stake.png" alt="" class="w-100">
-                                            <p class="my-2 small blue-text">Balsamic Glazed Pork Porterhouse, with broccolini and roasted
-                                                fingerlings.</p>
-                                            <p class="my-2 small gray-text">Balsamic Glazed Pork Porterhouse, with broccolini and roasted
-                                                fingerlings.</p>
+                    <div class="overflow-y-auto h-100">
+                        <form action="" class="h-100">
+                            <div class="container-fluid h-100">
+                                <h2 class="fw-semibold mb-0">AI Driven menu creation</h2>
+                                <div class="add-user-form add-task-page mt-3 d-flex flex-column col-xl-10">
+                                    <div class="row">
+                                        <div class="col-sm-6 p-2">
+                                            <div>
+                                                <label class="form-label mb-0" for="Cuisine-Type">Cuisine Type</label>
+                                                <select class="form-select focus-none" name="Cuisine-Type"
+                                                    id="Cuisine-Type">
+                                                    <option value="select" selected class="d-none">Select</option>
+                                                    <option value="Italian">Italian</option>
+                                                    <option value="Mexican">Mexican</option>
+                                                    <option value="Vegan">Vegan</option>
+                                                    <option value="Seasonal">Seasonal</option>
+                                                    <option value="FineDining">Fine Dining</option>
+                                                    <option value="Casual">Casual</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div class="mt-auto d-flex justify-content-between">
-                                            <a href="#" class="graybtn">Edit</a>
-                                            <a href="#" class="redbtn">Delete</a>
+                                        <div class="col-sm-6 p-2">
+                                            <div>
+                                                <label class="form-label mb-0" for="SeasonalIngredients">Seasonal
+                                                    Ingredients</label>
+                                                <select class="form-select focus-none" name="SeasonalIngredients"
+                                                    id="SeasonalIngredients">
+                                                    <option value="select" selected class="d-none">Select</option>
+                                                    <option value="Springvegetables">Spring vegetables</option>
+                                                    <option value="Wintermeat">Winter meat</option>
+                                                </select>
+                                            </div>
                                         </div>
-    
+                                        <div class="col-sm-6 p-2">
+                                            <div>
+                                                <label class="form-label mb-0" for="DietaryRestrictions">Dietary
+                                                    Restrictions</label>
+                                                <select class="form-select focus-none" name="DietaryRestrictions"
+                                                    id="DietaryRestrictions">
+                                                    <option value="select" selected class="d-none">Select</option>
+                                                    <option value="Vegan">Vegan</option>
+                                                    <option value="Pescatarian">Pescatarian</option>
+                                                    <option value="Vegetarian">Vegetarian</option>
+                                                    <option value="Gluten-free">Gluten-free</option>
+                                                    <option value="DairyFree">Dairy Free</option>
+                                                    <option value="AllergyDishes">Allergy Dishes</option>
+                                                    <option value="Allergy-safeDishes">Allergy-safe Dishes</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 p-2">
+                                            <div>
+                                                <label class="form-label mb-0" for="Template">Template</label>
+                                                <select class="form-select focus-none" name="Template" id="Template">
+                                                    <option value="select" selected class="d-none">Select</option>
+                                                    <option value="Template1">Template 1</option>
+                                                    <option value="Template2">Template 2</option>
+                                                    <option value="Template3">Template 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 p-2">
+                                            <div>
+                                                <label class="form-label mb-0" for="Budget">Budget Considerations</label>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">0$</span>
+                                                    <input class="ai-menu-range w-100 focus-none" type="range" id="Budget" name="Budget" step="1" min="0" max="100">
+                                                    <span class="ms-2">100$</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <input class="btn-main-blue my-2 me-2" type="submit" value="Generate">
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
