@@ -94,10 +94,16 @@ body {
     --dashboard-bg: rgba(1, 34, 65, 1);
     --custom-secondary: rgba(174, 172, 172, 1);
     --bd-active-link: rgba(153, 195, 255, 1);
-    --bg-custom-gray:rgba(245, 245, 245, 1);
-    --bg-green-btn:rgba(86, 202, 0, 1);
-    --bg-red-btn:rgba(255, 0, 0, 1);
+    --bg-custom-gray: rgba(245, 245, 245, 1);
+    --bg-green-btn: rgba(86, 202, 0, 1);
+    --bg-red-btn: rgba(255, 0, 0, 1);
+}
 
+.mycontainer {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .my-shadow {
@@ -116,50 +122,64 @@ body {
 .bg-main-blue {
     background-color: var(--dashboard-bg);
 }
-.bg-light-blue{
+
+.bg-light-blue {
     background-color: var(--bd-active-link);
 }
-.bg-green-btn{
+
+.bg-green-btn {
     background-color: var(--bg-green-btn);
 }
-.bg-red-btn{
+
+.bg-red-btn {
     background-color: var(--bg-red-btn);
 }
-.bg-custom-gray{
+
+.bg-custom-gray {
     background-color: var(--bg-custom-gray);
 }
-.text-custom-secondary{
+
+.text-custom-secondary {
     color: var(--custom-secondary);
 }
+
 .text-blue {
     color: var(--bd-active-link);
 }
-.text-dark-blue{
+
+.text-dark-blue {
     color: var(--dashboard-bg);
 }
-.bg-sky{
+
+.bg-sky {
     background-color: #04AEEF;
 }
-.text-sky{
+
+.text-sky {
     color: #04AEEF;
 }
-.text-red{
+
+.text-red {
     color: var(--bg-red-btn);
 }
-.text-12{
+
+.text-12 {
     font-size: 12px;
 }
+
 .border-blue {
     border-color: var(--bd-active-link) !important;
 }
-.btn-main-blue{
+
+.btn-main-blue {
     background-color: var(--dashboard-bg);
     color: #fff;
     text-decoration: none;
     padding: 12px;
     border-radius: 8px;
 }
-.btn-gray-regular{
+
+.btn-gray-regular {
     background-color: var(--bg-custom-gray);
     color: var(--dashboard-bg);
     border: 1px solid var(--dashboard-bg);
@@ -167,6 +187,7 @@ body {
     padding: 12px;
     border-radius: 8px;
 }
+
 .template-body {
     background-color: rgba(241, 241, 244, 1);
 }
@@ -223,7 +244,8 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
-.tem-right-btm{
+
+.tem-right-btm {
     height: calc(100dvh - 125px);
 }
 
@@ -253,12 +275,14 @@ body {
     .template-right {
         width: 100%;
     }
-    .template-right-top{
+
+    .template-right-top {
         border-top-left-radius: 0 !important;
         border-top-right-radius: 0 !important;
     }
-    .tem-right-btm{
+
+    .tem-right-btm {
         height: calc(100dvh - 100px);
     }
-    
+
 }
