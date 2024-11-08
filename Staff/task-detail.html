@@ -29,13 +29,15 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="teml-mid-links d-flex align-items-center w-100 text-start" href="wine-types.html">
+                                <a class="teml-mid-links d-flex align-items-center w-100 text-start"
+                                    href="wine-types.html">
                                     <div><img class="me-2 icon-image" src="../imgs/win-type.png" alt="img"></div>
                                     <span>Win Types</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="teml-mid-links d-flex align-items-center active w-100 text-start" href="tasks.html">
+                                <a class="teml-mid-links d-flex align-items-center active w-100 text-start"
+                                    href="tasks.html">
                                     <div><img class="me-2 icon-image" src="../imgs/tasks-blue.png" alt="img"></div>
                                     <span>Tasks</span>
                                 </a>
@@ -45,7 +47,7 @@
                     <div class="template-left-bottom">
                         <div class="d-flex justify-content-center px-4">
                             <a class="text-decoration-none text-white d-flex align-items-center justify-content-center fw-medium rounded-3 border border-2 border-blue py-3 w-100"
-                                href="#">
+                                href="login.html">
                                 <div>
                                     <img class="icon-image me-3" src="../imgs/logout.png" alt="img">
                                 </div>
@@ -100,276 +102,298 @@
                                 <h2 class="fw-semibold mb-0">Task Detail</h2>
                             </div>
                         </div>
-                        <div class="task-detail-page bg-white overflow-auto rounded-4 my-shadow p-3">
-                            <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom">
-                                <div class="w-lsm-100">
-                                    <h3 class="mb-0">Task name here</h3>
-                                </div>
-                                <div class="w-lsm-100 d-flex align-items-center justify-content-end position-relative">
-                                    <div class="my-2">
-                                        <img class="pointer icon-35px" src="../imgs/ellipsis-verticle.png" alt="img"
-                                            onclick="taskContentToggle()">
+                        <div class="task-detail-page bg-white rounded-4 my-shadow p-2">
+                            <div class="container-fluid overflow-auto h-100">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom">
+                                    <div class="w-lmd-100">
+                                        <h3 class="mb-0">Task name here</h3>
                                     </div>
-                                    <div class="task-update-content position-absolute top-100 z-3 bg-white my-shadow rounded-4 p-2"
-                                        id="task-update-content">
-                                        <ul class="mb-0 list-unstyled text-custom-secondary text-nowrap fs-5">
-                                            <li>Completed</li>
-                                            <li>In-progress</li>
-                                            <li>Overdue</li>
-                                        </ul>
+                                    <div
+                                        class="w-lmd-100 d-flex align-items-center justify-content-end text-lsm-14 position-relative">
+                                        <div class="my-2">
+                                            <img class="pointer icon-35px" src="../imgs/ellipsis-verticle.png" alt="img"
+                                                onclick="taskContentToggle()">
+                                        </div>
+                                        <div class="task-update-content position-absolute top-100 z-3 bg-white my-shadow rounded-4 p-2"
+                                            id="task-update-content">
+                                            <ul class="mb-0 list-unstyled text-custom-secondary fs-5">
+                                                <li>Completed</li>
+                                                <li>In-progress</li>
+                                                <li>Overdue</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <h4 class="mt-2">Task Status Page</h4>
-                            <div class="task-status-tables row">
-                                <div class="col-lg-6">
-                                    <table class="table mb-0 table-borderless">
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img class="icon-35px me-2" src="../imgs/status-blue.png" alt="img">
-                                                    <span class="text-custom-secondary fs-5">Status</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <i class="fa-solid fa-circle me-2 text-blue"></i>
-                                                    <span>Completed</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img class="icon-35px me-2" src="../imgs/clock-blue.png" alt="img">
-                                                    <span class="text-custom-secondary fs-5">Started at</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <span>9:00am</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img class="icon-35px me-2" src="../imgs/assigned-blue.png"
-                                                        alt="img">
-                                                    <span class="text-custom-secondary fs-5">Assigned</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img class="img-50px rounded-circle object-fit-cover"
-                                                        src="../imgs/template-profile-img.png" alt="">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                <h4 class="mt-2">Task Status Page</h4>
+                                <div class="task-status-tables row">
+                                    <div class="col-lg-6">
+                                        <table class="table mb-0 table-borderless">
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-35px me-2" src="../imgs/status-blue.png"
+                                                            alt="img">
+                                                        <span class="text-custom-secondary fs-5">Status</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-circle me-2 text-blue"></i>
+                                                        <span>Completed</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-35px me-2" src="../imgs/clock-blue.png"
+                                                            alt="img">
+                                                        <span class="text-custom-secondary fs-5">Started at</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span>9:00am</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-35px me-2" src="../imgs/assigned-blue.png"
+                                                            alt="img">
+                                                        <span class="text-custom-secondary fs-5">Assigned</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="img-50px rounded-circle object-fit-cover"
+                                                            src="../imgs/template-profile-img.png" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <table class="table mb-0 table-borderless">
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-35px me-2" src="../imgs/priority-blue.png"
+                                                            alt="img">
+                                                        <span class="text-custom-secondary fs-5">Priority</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa-solid fa-circle me-2 text-red"></i>
+                                                        <span>High</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-35px me-2" src="../imgs/clock-blue.png"
+                                                            alt="img">
+                                                        <span class="text-custom-secondary fs-5">Completed at</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span>9:40am</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-35px me-2" src="../imgs/envelope-blue.png"
+                                                            alt="img">
+                                                        <span class="text-custom-secondary fs-5">Email address</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <p class="mb-0">john.doe@example.com</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <table class="table mb-0 table-borderless">
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img class="icon-35px me-2" src="../imgs/priority-blue.png"
-                                                        alt="img">
-                                                    <span class="text-custom-secondary fs-5">Priority</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <i class="fa-solid fa-circle me-2 text-red"></i>
-                                                    <span>High</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img class="icon-35px me-2" src="../imgs/clock-blue.png" alt="img">
-                                                    <span class="text-custom-secondary fs-5">Completed at</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <span>9:40am</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <img class="icon-35px me-2" src="../imgs/envelope-blue.png"
-                                                        alt="img">
-                                                    <span class="text-custom-secondary fs-5">Email address</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <p class="mb-0">john.doe@example.com</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                <h4 class="mb-0 mt-4 text-custom-secondary">Task Description</h4>
+                                <div class="text-secondary rounded-4 py-4 px-2 bg-custom-gray ">
+                                    <div class="task-discription-box overflow-y-auto p-2">
+                                        <h5>Main Title: Lorem Ipsum </h5>
+                                        <h6>Subject Title:</h6>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a
+                                            type specimen book.
+                                        </p>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a
+                                            type specimen book.
+                                        </p>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a
+                                            type specimen book.
+                                        </p>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a
+                                            type specimen book.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <h4 class="mb-0 mt-4 text-custom-secondary">Task Description</h4>
-                            <div
-                                class="task-discription-box text-secondary rounded-4 p-4 bg-custom-gray overflow-y-auto">
-                                <h5>Main Title: Lorem Ipsum </h5>
-                                <h6>Subject Title:</h6>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the
-                                    1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.
-                                </p>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the
-                                    1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.
-                                </p>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the
-                                    1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.
-                                </p>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the
-                                    1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.
-                                </p>
-                            </div>
-                            <div class="col-sm-6 col-md-4 my-4 task-detail-video-box">
-                                <iframe class="w-100 rounded-4"
-                                    src="https://www.youtube.com/embed/LXb3EKWsInQ?si=Ydsrv8LYReOp2mYh"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <div class="border-bottom">
-                                <h4 class="mb-0 pb-2 border-bottom border-4 border-primary d-inline-block text-primary">
-                                    Comments</h4>
-                            </div>
-                            <div class="border rounded-4 p-2 p-sm-3 pb-0 pb-sm-0 mt-4">
-                                <div class="comments-box overflow-y-auto">
-                                    <div class="position-relative mb-4 border-bottom">
-                                        <div class="d-flex justify-content-between flex-wrap">
-                                            <div class="d-flex align-items-center order-2 order-sm-1">
-                                                <div class="me-3">
-                                                    <div class="d-inline rounded-circle position-relative">
-                                                        <img class="rounded-circle img-60px object-fit-cover"
-                                                            src="../imgs/template-profile-img.png" alt="img">
-                                                        <div
-                                                            class="com-aut-online position-absolute top-100 start-100 text-12 translate-middle-x ">
-                                                            <i class="fa-solid fa-circle translate-middle-x"></i>
+                                <div class="col-sm-6 col-md-4 my-4 task-detail-video-box">
+                                    <iframe class="w-100 rounded-4"
+                                        src="https://www.youtube.com/embed/LXb3EKWsInQ?si=Ydsrv8LYReOp2mYh"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="border-bottom">
+                                    <h4
+                                        class="mb-0 pb-2 border-bottom border-4 border-primary d-inline-block text-primary">
+                                        Comments</h4>
+                                </div>
+                                <div class="border rounded-4 p-2 p-sm-3 pb-0 pb-sm-0 mt-4">
+                                    <div class="comments-box overflow-y-auto">
+                                        <div class="position-relative mb-4 border-bottom">
+                                            <div class="d-flex justify-content-between flex-wrap">
+                                                <div class="d-flex align-items-center order-2 order-sm-1">
+                                                    <div class="me-3">
+                                                        <div class="d-inline rounded-circle position-relative">
+                                                            <img class="rounded-circle img-60px object-fit-cover"
+                                                                src="../imgs/template-profile-img.png" alt="img">
+                                                            <div
+                                                                class="com-aut-online position-absolute top-100 start-100 text-12 translate-middle-x ">
+                                                                <i class="fa-solid fa-circle translate-middle-x"></i>
+                                                            </div>
                                                         </div>
                                                     </div>
+                                                    <div class="d-flex align-items-center flex-wrap">
+                                                        <h5 class="mb-0 me-3 w-lxsm-100">Calum Tyler</h5>
+                                                        <p class="mb-0 text-custom-secondary small w-lxsm-100">
+                                                            <i class="fa-solid fa-circle text-12 me-2"></i>
+                                                            2 hours ago
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex align-items-center flex-wrap">
-                                                    <h5 class="mb-0 me-3 w-lxsm-100">Calum Tyler</h5>
-                                                    <p class="mb-0 text-custom-secondary small w-lxsm-100">
-                                                        <i class="fa-solid fa-circle text-12 me-2"></i>
-                                                        2 hours ago
-                                                    </p>
+                                                <div class="order-1 order-sm-2 w-lsm-100">
+                                                    <p class="mb-0 text-end text-custom-secondary small">09/07/2024</p>
                                                 </div>
                                             </div>
-                                            <div class="order-1 order-sm-2 w-lsm-100">
-                                                <p class="mb-0 text-end text-custom-secondary small">09/07/2024</p>
+                                            <div class="my-4 col-md-10 col-lg-8 small">
+                                                <p>Hey, <span class="text-primary">@Dear Admin</span> wanted to discuss
+                                                    the
+                                                    upcoming Employee Statistics page design!</p>
+                                                <p>I think it's crucial for us to have a clear vision of what to achieve
+                                                    with this platform. Any initial thoughts?</p>
+                                            </div>
+                                            <div class="position-absolute top-100 start-50 translate-middle">
+                                                <p
+                                                    class="mb-0 bg-white text-primary small py-1 px-3 border rounded-pill text-nowrap">
+                                                    New Messages</p>
                                             </div>
                                         </div>
-                                        <div class="my-4 col-md-10 col-lg-8 small">
-                                            <p>Hey, <span class="text-primary">@Dear Admin</span> wanted to discuss the
-                                                upcoming Employee Statistics page design!</p>
-                                            <p>I think it's crucial for us to have a clear vision of what to achieve
-                                                with this platform. Any initial thoughts?</p>
-                                        </div>
-                                        <div class="position-absolute top-100 start-50 translate-middle">
-                                            <p
-                                                class="mb-0 bg-white text-primary small py-1 px-3 border rounded-pill text-nowrap">
-                                                New Messages</p>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative mb-4 border-bottom">
-                                        <div class="d-flex justify-content-between flex-wrap">
-                                            <div class="d-flex align-items-center order-2 order-sm-1">
-                                                <div class="me-3">
-                                                    <div class="d-inline rounded-circle position-relative">
-                                                        <img class="rounded-circle img-60px object-fit-cover"
-                                                            src="../imgs/user-table-profile.jpg" alt="img">
-                                                        <div
-                                                            class="com-aut-offline position-absolute top-100 start-100 text-12 translate-middle-x ">
-                                                            <i class="fa-solid fa-circle translate-middle-x"></i>
+                                        <div class="position-relative mb-4 border-bottom">
+                                            <div class="d-flex justify-content-between flex-wrap">
+                                                <div class="d-flex align-items-center order-2 order-sm-1">
+                                                    <div class="me-3">
+                                                        <div class="d-inline rounded-circle position-relative">
+                                                            <img class="rounded-circle img-60px object-fit-cover"
+                                                                src="../imgs/user-table-profile.jpg" alt="img">
+                                                            <div
+                                                                class="com-aut-offline position-absolute top-100 start-100 text-12 translate-middle-x ">
+                                                                <i class="fa-solid fa-circle translate-middle-x"></i>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="d-flex align-items-center flex-wrap">
-                                                    <h5 class="mb-0 me-3 w-lxsm-100">Calum Tyler</h5>
-                                                    <p class="mb-0 text-custom-secondary small w-lxsm-100">
-                                                        <i class="fa-solid fa-circle text-12 me-2"></i>
-                                                        1:30 hours ago
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="order-1 order-sm-2 w-lsm-100">
-                                                <p class="mb-0 text-end text-custom-secondary small">09/07/2024</p>
-                                            </div>
-                                        </div>
-                                        <div class="my-4 col-md-10 col-lg-8 small">
-                                            <p>Absolutely, <span class="text-primary">@Yaseen</span> I think the design
-                                                should prioritize simplicity and accessibility.</p>
-                                        </div>
-                                        <div class="position-absolute top-100 start-50 translate-middle">
-                                            <p
-                                                class="mb-0 bg-white text-primary small py-1 px-3 border rounded-pill text-nowrap">
-                                                New Messages</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <form action="">
-                                    <div class="mt-3 d-flex align-items-center">
-                                        <div class="d-none d-md-block">
-                                            <img class="img-50px rounded-circle me-3 object-fit-cover"
-                                                src="../imgs/template-profile-img.png" alt="">
-                                        </div>
-                                        <div class="w-100 bg-white my-shadow d-flex align-items-center rounded">
-                                            <div class="p-3 pe-2 position-relative">
-                                                <div class="insert-comment-items d-sm-block" id="insert-comment-items">
-                                                    <div
-                                                        class="border-end border-ssm-0 d-flex flex-column flex-sm-row align-items-center">
-                                                        <a class="text-decration-none text-primary border-end border-ssm-0 m-2 mx-0"
-                                                            href="#"><i class="fa-solid fa-microphone me-sm-2"></i></a>
-                                                        <a class="text-decration-none text-primary m-2" href="#"><i
-                                                                class="fa-regular fa-face-smile"></i></a>
-                                                        <input class="d-none" type="file" name="comment-file"
-                                                            id="comment-file">
-                                                        <label class="text-primary m-2 pointer" for="comment-file"><i
-                                                                class="fa-solid fa-paperclip"></i></label>
+                                                    <div class="d-flex align-items-center flex-wrap">
+                                                        <h5 class="mb-0 me-3 w-lxsm-100">Calum Tyler</h5>
+                                                        <p class="mb-0 text-custom-secondary small w-lxsm-100">
+                                                            <i class="fa-solid fa-circle text-12 me-2"></i>
+                                                            1:30 hours ago
+                                                        </p>
                                                     </div>
                                                 </div>
-                                                <div class="d-sm-none pointer" onclick="toggleCommentItem()">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                <div class="order-1 order-sm-2 w-lsm-100">
+                                                    <p class="mb-0 text-end text-custom-secondary small">09/07/2024</p>
                                                 </div>
                                             </div>
-                                            <div class="m-2 w-100">
-                                                <input class="form-control focus-none bg-custom-gray py-2" type="text"
-                                                    name="comment" id="comment" placeholder="Write Comment">
+                                            <div class="my-4 col-md-10 col-lg-8 small">
+                                                <p>Absolutely, <span class="text-primary">@Yaseen</span> I think the
+                                                    design
+                                                    should prioritize simplicity and accessibility.</p>
                                             </div>
-                                            <label>
-                                                <i
-                                                    class="fa-regular pointer fa-paper-plane d-sm-none m-2 ms-0 text-sky"></i>
-                                                <input
-                                                    class="m-2 bg-sky border-0 py-2 px-5 text-white rounded-3 d-none d-sm-block"
-                                                    type="submit" value="send">
-                                            </label>
+                                            <div class="position-absolute top-100 start-50 translate-middle">
+                                                <p
+                                                    class="mb-0 bg-white text-primary small py-1 px-3 border rounded-pill text-nowrap">
+                                                    New Messages</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </form>
+                                    <form action="">
+                                        <div class="mt-3 d-flex align-items-center">
+                                            <div class="d-none d-md-block">
+                                                <img class="img-50px rounded-circle me-3 object-fit-cover"
+                                                    src="../imgs/template-profile-img.png" alt="">
+                                            </div>
+                                            <div class="w-100 bg-white my-shadow d-flex align-items-center rounded">
+                                                <div class="p-3 pe-2 position-relative">
+                                                    <div class="insert-comment-items d-sm-block"
+                                                        id="insert-comment-items">
+                                                        <div
+                                                            class="border-end border-ssm-0 d-flex flex-column flex-sm-row align-items-center">
+                                                            <a class="text-decration-none text-primary border-end border-ssm-0 m-2 mx-0"
+                                                                href="#"><i
+                                                                    class="fa-solid fa-microphone me-sm-2"></i></a>
+                                                            <a class="text-decration-none text-primary m-2" href="#"><i
+                                                                    class="fa-regular fa-face-smile"></i></a>
+                                                            <input class="d-none" type="file" name="comment-file"
+                                                                id="comment-file">
+                                                            <label class="text-primary m-2 pointer"
+                                                                for="comment-file"><i
+                                                                    class="fa-solid fa-paperclip"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-sm-none pointer" onclick="toggleCommentItem()">
+                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="m-2 w-100">
+                                                    <input class="form-control focus-none bg-custom-gray py-2"
+                                                        type="text" name="comment" id="comment"
+                                                        placeholder="Write Comment">
+                                                </div>
+                                                <label>
+                                                    <i
+                                                        class="fa-regular pointer fa-paper-plane d-sm-none m-2 ms-0 text-sky"></i>
+                                                    <input
+                                                        class="m-2 bg-sky border-0 py-2 px-5 text-white rounded-3 d-none d-sm-block"
+                                                        type="submit" value="send">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

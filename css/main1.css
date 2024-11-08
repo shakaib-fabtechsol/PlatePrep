@@ -109,8 +109,9 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-
-.user-table,
+.user-table{
+    height:calc(100% - 70px); ;
+}
 .task-detail-page,
 .add-task-page {
     height: calc(100% - 70px);
@@ -171,6 +172,9 @@
 .user-table thead tr th:last-child {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+.min-h-100{
+    min-height: 100%;
 }
 
 .profile-detail .pd-image {
