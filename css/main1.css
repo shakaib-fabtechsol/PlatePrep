@@ -112,6 +112,7 @@
 .user-table{
     height:calc(100% - 70px); ;
 }
+.templates-page,
 .task-detail-page,
 .add-task-page {
     height: calc(100% - 70px);
@@ -1125,6 +1126,9 @@ label.radio-wrapper-8:hover input:checked+span:after {
         box-shadow: 0px 0px 20px 0px rgba(154, 154, 154, 0.2);
         border-radius: 8px;
         padding: 12px;
+    }
+    .templates-page{
+        height: calc(100% - 120px);
     }
 
 }
