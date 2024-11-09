@@ -1059,6 +1059,11 @@ label.radio-wrapper-8:hover input:checked+span:after {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.template-right-top {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+
 @media screen and (max-width:992px) {
     .border-slg-0 {
         border: none !important;
