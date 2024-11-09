@@ -246,7 +246,7 @@ body {
 }
 
 .tem-right-btm {
-    height: calc(100dvh - 125px);
+    height: calc(100dvh - 115px);
 }
 
 .template-body>* ::-webkit-scrollbar {
@@ -272,6 +272,7 @@ body {
     margin: 20px 0;
 
 }
+
 @media screen and (max-width:1200px) {
     .template-left {
         display: none;
@@ -288,7 +289,7 @@ body {
     }
 
     .tem-right-btm {
-        height: calc(100dvh - 100px);
+        height: calc(100dvh - 90px);
     }
 
 }
